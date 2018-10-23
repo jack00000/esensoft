@@ -1,0 +1,845 @@
+[DEBUG][2018-10-15 19:24:38,877][org.apache.solr.client.solrj.impl.HttpClientUtil]Creating new http client, config:maxConnections=128&maxConnectionsPerHost=32&followRedirects=false
+[DEBUG][2018-10-15 19:24:39,300][org.apache.http.impl.conn.PoolingClientConnectionManager]Connection request: [route: {}->http://localhost:8983][total kept alive: 0; route allocated: 0 of 32; total allocated: 0 of 128]
+[DEBUG][2018-10-15 19:24:39,313][org.apache.http.impl.conn.PoolingClientConnectionManager]Connection leased: [id: 0][route: {}->http://localhost:8983][total kept alive: 0; route allocated: 1 of 32; total allocated: 1 of 128]
+[DEBUG][2018-10-15 19:24:39,316][org.apache.http.impl.conn.DefaultClientConnectionOperator]Connecting to localhost:8983
+[DEBUG][2018-10-15 19:24:39,334][org.apache.http.client.protocol.RequestAddCookies]CookieSpec selected: default
+[DEBUG][2018-10-15 19:24:39,336][org.apache.http.client.protocol.RequestAuthCache]Auth cache not set in the context
+[DEBUG][2018-10-15 19:24:39,337][org.apache.http.client.protocol.RequestTargetAuthentication]Target auth state: UNCHALLENGED
+[DEBUG][2018-10-15 19:24:39,337][org.apache.http.client.protocol.RequestProxyAuthentication]Proxy auth state: UNCHALLENGED
+[DEBUG][2018-10-15 19:24:39,338][org.apache.http.impl.client.SystemDefaultHttpClient]Attempt 1 to execute request
+[DEBUG][2018-10-15 19:24:39,338][org.apache.http.impl.conn.DefaultClientConnection]Sending request: POST /solr/test/update?wt=javabin&version=2 HTTP/1.1
+[DEBUG][2018-10-15 19:24:39,339][org.apache.http.wire] >> "POST /solr/test/update?wt=javabin&version=2 HTTP/1.1[\r][\n]"
+[DEBUG][2018-10-15 19:24:39,340][org.apache.http.wire] >> "User-Agent: Solr[org.apache.solr.client.solrj.impl.HttpSolrClient] 1.0[\r][\n]"
+[DEBUG][2018-10-15 19:24:39,341][org.apache.http.wire] >> "Transfer-Encoding: chunked[\r][\n]"
+[DEBUG][2018-10-15 19:24:39,341][org.apache.http.wire] >> "Content-Type: application/xml; charset=UTF-8[\r][\n]"
+[DEBUG][2018-10-15 19:24:39,341][org.apache.http.wire] >> "Host: localhost:8983[\r][\n]"
+[DEBUG][2018-10-15 19:24:39,341][org.apache.http.wire] >> "Connection: Keep-Alive[\r][\n]"
+[DEBUG][2018-10-15 19:24:39,343][org.apache.http.wire] >> "[\r][\n]"
+[DEBUG][2018-10-15 19:24:39,343][org.apache.http.headers]>> POST /solr/test/update?wt=javabin&version=2 HTTP/1.1
+[DEBUG][2018-10-15 19:24:39,343][org.apache.http.headers]>> User-Agent: Solr[org.apache.solr.client.solrj.impl.HttpSolrClient] 1.0
+[DEBUG][2018-10-15 19:24:39,343][org.apache.http.headers]>> Transfer-Encoding: chunked
+[DEBUG][2018-10-15 19:24:39,343][org.apache.http.headers]>> Content-Type: application/xml; charset=UTF-8
+[DEBUG][2018-10-15 19:24:39,344][org.apache.http.headers]>> Host: localhost:8983
+[DEBUG][2018-10-15 19:24:39,344][org.apache.http.headers]>> Connection: Keep-Alive
+[DEBUG][2018-10-15 19:24:39,344][org.apache.http.wire] >> "60[\r][\n]"
+[DEBUG][2018-10-15 19:24:39,347][org.apache.http.wire] >> "<add><doc boost="1.0"><field name="id">8</field><field name="name">[0xe5][0x91][0xa8][0xe6][0x96][0xb0][0xe6][0x98][0x9f]</field></doc></add>"
+[DEBUG][2018-10-15 19:24:39,348][org.apache.http.wire] >> "[\r][\n]"
+[DEBUG][2018-10-15 19:24:39,348][org.apache.http.wire] >> "0[\r][\n]"
+[DEBUG][2018-10-15 19:24:39,348][org.apache.http.wire] >> "[\r][\n]"
+[DEBUG][2018-10-15 19:24:39,355][org.apache.http.wire] << "HTTP/1.1 200 OK[\r][\n]"
+[DEBUG][2018-10-15 19:24:39,357][org.apache.http.wire] << "Content-Type: application/octet-stream[\r][\n]"
+[DEBUG][2018-10-15 19:24:39,358][org.apache.http.wire] << "Content-Length: 40[\r][\n]"
+[DEBUG][2018-10-15 19:24:39,358][org.apache.http.wire] << "[\r][\n]"
+[DEBUG][2018-10-15 19:24:39,359][org.apache.http.impl.conn.DefaultClientConnection]Receiving response: HTTP/1.1 200 OK
+[DEBUG][2018-10-15 19:24:39,359][org.apache.http.headers]<< HTTP/1.1 200 OK
+[DEBUG][2018-10-15 19:24:39,359][org.apache.http.headers]<< Content-Type: application/octet-stream
+[DEBUG][2018-10-15 19:24:39,360][org.apache.http.headers]<< Content-Length: 40
+[DEBUG][2018-10-15 19:24:39,363][org.apache.http.impl.client.SystemDefaultHttpClient]Connection can be kept alive indefinitely
+[DEBUG][2018-10-15 19:24:39,411][org.apache.http.wire] << "[0x2][0xa1][0xe0].responseHeader[0xa2][0xe0]&status[0x6][0x0][0x0][0x0][0x0][0xe0]%QTimeE"
+[DEBUG][2018-10-15 19:24:39,412][org.apache.http.impl.conn.PoolingClientConnectionManager]Connection [id: 0][route: {}->http://localhost:8983] can be kept alive indefinitely
+[DEBUG][2018-10-15 19:24:39,412][org.apache.http.impl.conn.PoolingClientConnectionManager]Connection released: [id: 0][route: {}->http://localhost:8983][total kept alive: 1; route allocated: 1 of 32; total allocated: 1 of 128]
+[DEBUG][2018-10-15 19:24:39,416][org.apache.http.impl.conn.PoolingClientConnectionManager]Connection request: [route: {}->http://localhost:8983][total kept alive: 1; route allocated: 1 of 32; total allocated: 1 of 128]
+[DEBUG][2018-10-15 19:24:39,416][org.apache.http.impl.conn.PoolingClientConnectionManager]Connection leased: [id: 0][route: {}->http://localhost:8983][total kept alive: 0; route allocated: 1 of 32; total allocated: 1 of 128]
+[DEBUG][2018-10-15 19:24:39,417][org.apache.http.impl.client.SystemDefaultHttpClient]Stale connection check
+[DEBUG][2018-10-15 19:24:39,418][org.apache.http.client.protocol.RequestAddCookies]CookieSpec selected: default
+[DEBUG][2018-10-15 19:24:39,419][org.apache.http.client.protocol.RequestAuthCache]Auth cache not set in the context
+[DEBUG][2018-10-15 19:24:39,419][org.apache.http.client.protocol.RequestTargetAuthentication]Target auth state: UNCHALLENGED
+[DEBUG][2018-10-15 19:24:39,419][org.apache.http.client.protocol.RequestProxyAuthentication]Proxy auth state: UNCHALLENGED
+[DEBUG][2018-10-15 19:24:39,420][org.apache.http.impl.client.SystemDefaultHttpClient]Attempt 1 to execute request
+[DEBUG][2018-10-15 19:24:39,420][org.apache.http.impl.conn.DefaultClientConnection]Sending request: POST /solr/test/update HTTP/1.1
+[DEBUG][2018-10-15 19:24:39,420][org.apache.http.wire] >> "POST /solr/test/update HTTP/1.1[\r][\n]"
+[DEBUG][2018-10-15 19:24:39,421][org.apache.http.wire] >> "Content-Type: application/x-www-form-urlencoded; charset=UTF-8[\r][\n]"
+[DEBUG][2018-10-15 19:24:39,421][org.apache.http.wire] >> "User-Agent: Solr[org.apache.solr.client.solrj.impl.HttpSolrClient] 1.0[\r][\n]"
+[DEBUG][2018-10-15 19:24:39,421][org.apache.http.wire] >> "Content-Length: 67[\r][\n]"
+[DEBUG][2018-10-15 19:24:39,422][org.apache.http.wire] >> "Host: localhost:8983[\r][\n]"
+[DEBUG][2018-10-15 19:24:39,422][org.apache.http.wire] >> "Connection: Keep-Alive[\r][\n]"
+[DEBUG][2018-10-15 19:24:39,422][org.apache.http.wire] >> "[\r][\n]"
+[DEBUG][2018-10-15 19:24:39,423][org.apache.http.headers]>> POST /solr/test/update HTTP/1.1
+[DEBUG][2018-10-15 19:24:39,423][org.apache.http.headers]>> Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+[DEBUG][2018-10-15 19:24:39,423][org.apache.http.headers]>> User-Agent: Solr[org.apache.solr.client.solrj.impl.HttpSolrClient] 1.0
+[DEBUG][2018-10-15 19:24:39,423][org.apache.http.headers]>> Content-Length: 67
+[DEBUG][2018-10-15 19:24:39,423][org.apache.http.headers]>> Host: localhost:8983
+[DEBUG][2018-10-15 19:24:39,424][org.apache.http.headers]>> Connection: Keep-Alive
+[DEBUG][2018-10-15 19:24:39,424][org.apache.http.wire] >> "commit=true&softCommit=false&waitSearcher=true&wt=javabin&version=2"
+[DEBUG][2018-10-15 19:24:39,567][org.apache.http.wire] << "HTTP/1.1 200 OK[\r][\n]"
+[DEBUG][2018-10-15 19:24:39,567][org.apache.http.wire] << "Content-Type: application/octet-stream[\r][\n]"
+[DEBUG][2018-10-15 19:24:39,568][org.apache.http.wire] << "Content-Length: 41[\r][\n]"
+[DEBUG][2018-10-15 19:24:39,568][org.apache.http.wire] << "[\r][\n]"
+[DEBUG][2018-10-15 19:24:39,568][org.apache.http.impl.conn.DefaultClientConnection]Receiving response: HTTP/1.1 200 OK
+[DEBUG][2018-10-15 19:24:39,568][org.apache.http.headers]<< HTTP/1.1 200 OK
+[DEBUG][2018-10-15 19:24:39,568][org.apache.http.headers]<< Content-Type: application/octet-stream
+[DEBUG][2018-10-15 19:24:39,569][org.apache.http.headers]<< Content-Length: 41
+[DEBUG][2018-10-15 19:24:39,573][org.apache.http.impl.client.SystemDefaultHttpClient]Connection can be kept alive indefinitely
+[DEBUG][2018-10-15 19:24:39,573][org.apache.http.wire] << "[0x2][0xa1][0xe0].responseHeader[0xa2][0xe0]&status[0x6][0x0][0x0][0x0][0x0][0xe0]%QTimeY[0x8]"
+[DEBUG][2018-10-15 19:24:39,574][org.apache.http.impl.conn.PoolingClientConnectionManager]Connection [id: 0][route: {}->http://localhost:8983] can be kept alive indefinitely
+[DEBUG][2018-10-15 19:24:39,574][org.apache.http.impl.conn.PoolingClientConnectionManager]Connection released: [id: 0][route: {}->http://localhost:8983][total kept alive: 1; route allocated: 1 of 32; total allocated: 1 of 128]
+[DEBUG][2018-10-15 19:24:39,575][org.apache.http.impl.conn.PoolingClientConnectionManager]Connection manager is shutting down
+[DEBUG][2018-10-15 19:24:39,575][org.apache.http.impl.conn.DefaultClientConnection]Connection 0.0.0.0:53278<->127.0.0.1:8983 closed
+[DEBUG][2018-10-15 19:24:39,576][org.apache.http.impl.conn.DefaultClientConnection]Connection 0.0.0.0:53278<->127.0.0.1:8983 closed
+[DEBUG][2018-10-15 19:24:39,576][org.apache.http.impl.conn.PoolingClientConnectionManager]Connection manager shut down
+[DEBUG][2018-10-15 19:24:39,576][org.apache.solr.client.solrj.impl.HttpClientUtil]Creating new http client, config:maxConnections=128&maxConnectionsPerHost=32&followRedirects=false
+[DEBUG][2018-10-15 19:24:39,579][org.apache.http.impl.conn.PoolingClientConnectionManager]Connection request: [route: {}->http://localhost:8983][total kept alive: 0; route allocated: 0 of 32; total allocated: 0 of 128]
+[DEBUG][2018-10-15 19:24:39,579][org.apache.http.impl.conn.PoolingClientConnectionManager]Connection leased: [id: 1][route: {}->http://localhost:8983][total kept alive: 0; route allocated: 1 of 32; total allocated: 1 of 128]
+[DEBUG][2018-10-15 19:24:39,579][org.apache.http.impl.conn.DefaultClientConnectionOperator]Connecting to localhost:8983
+[DEBUG][2018-10-15 19:24:39,580][org.apache.http.client.protocol.RequestAddCookies]CookieSpec selected: default
+[DEBUG][2018-10-15 19:24:39,580][org.apache.http.client.protocol.RequestAuthCache]Auth cache not set in the context
+[DEBUG][2018-10-15 19:24:39,581][org.apache.http.client.protocol.RequestTargetAuthentication]Target auth state: UNCHALLENGED
+[DEBUG][2018-10-15 19:24:39,581][org.apache.http.client.protocol.RequestProxyAuthentication]Proxy auth state: UNCHALLENGED
+[DEBUG][2018-10-15 19:24:39,581][org.apache.http.impl.client.SystemDefaultHttpClient]Attempt 1 to execute request
+[DEBUG][2018-10-15 19:24:39,581][org.apache.http.impl.conn.DefaultClientConnection]Sending request: POST /solr/test/update?wt=javabin&version=2 HTTP/1.1
+[DEBUG][2018-10-15 19:24:39,582][org.apache.http.wire] >> "POST /solr/test/update?wt=javabin&version=2 HTTP/1.1[\r][\n]"
+[DEBUG][2018-10-15 19:24:39,582][org.apache.http.wire] >> "User-Agent: Solr[org.apache.solr.client.solrj.impl.HttpSolrClient] 1.0[\r][\n]"
+[DEBUG][2018-10-15 19:24:39,582][org.apache.http.wire] >> "Transfer-Encoding: chunked[\r][\n]"
+[DEBUG][2018-10-15 19:24:39,582][org.apache.http.wire] >> "Content-Type: application/xml; charset=UTF-8[\r][\n]"
+[DEBUG][2018-10-15 19:24:39,583][org.apache.http.wire] >> "Host: localhost:8983[\r][\n]"
+[DEBUG][2018-10-15 19:24:39,583][org.apache.http.wire] >> "Connection: Keep-Alive[\r][\n]"
+[DEBUG][2018-10-15 19:24:39,583][org.apache.http.wire] >> "[\r][\n]"
+[DEBUG][2018-10-15 19:24:39,583][org.apache.http.headers]>> POST /solr/test/update?wt=javabin&version=2 HTTP/1.1
+[DEBUG][2018-10-15 19:24:39,584][org.apache.http.headers]>> User-Agent: Solr[org.apache.solr.client.solrj.impl.HttpSolrClient] 1.0
+[DEBUG][2018-10-15 19:24:39,584][org.apache.http.headers]>> Transfer-Encoding: chunked
+[DEBUG][2018-10-15 19:24:39,584][org.apache.http.headers]>> Content-Type: application/xml; charset=UTF-8
+[DEBUG][2018-10-15 19:24:39,584][org.apache.http.headers]>> Host: localhost:8983
+[DEBUG][2018-10-15 19:24:39,584][org.apache.http.headers]>> Connection: Keep-Alive
+[DEBUG][2018-10-15 19:24:39,585][org.apache.http.wire] >> "1b[\r][\n]"
+[DEBUG][2018-10-15 19:24:39,585][org.apache.http.wire] >> "<delete><id>8</id></delete>"
+[DEBUG][2018-10-15 19:24:39,586][org.apache.http.wire] >> "[\r][\n]"
+[DEBUG][2018-10-15 19:24:39,586][org.apache.http.wire] >> "0[\r][\n]"
+[DEBUG][2018-10-15 19:24:39,587][org.apache.http.wire] >> "[\r][\n]"
+[DEBUG][2018-10-15 19:24:39,591][org.apache.http.wire] << "HTTP/1.1 200 OK[\r][\n]"
+[DEBUG][2018-10-15 19:24:39,592][org.apache.http.wire] << "Content-Type: application/octet-stream[\r][\n]"
+[DEBUG][2018-10-15 19:24:39,592][org.apache.http.wire] << "Content-Length: 40[\r][\n]"
+[DEBUG][2018-10-15 19:24:39,592][org.apache.http.wire] << "[\r][\n]"
+[DEBUG][2018-10-15 19:24:39,592][org.apache.http.impl.conn.DefaultClientConnection]Receiving response: HTTP/1.1 200 OK
+[DEBUG][2018-10-15 19:24:39,593][org.apache.http.headers]<< HTTP/1.1 200 OK
+[DEBUG][2018-10-15 19:24:39,593][org.apache.http.headers]<< Content-Type: application/octet-stream
+[DEBUG][2018-10-15 19:24:39,594][org.apache.http.headers]<< Content-Length: 40
+[DEBUG][2018-10-15 19:24:39,594][org.apache.http.impl.client.SystemDefaultHttpClient]Connection can be kept alive indefinitely
+[DEBUG][2018-10-15 19:24:39,594][org.apache.http.wire] << "[0x2][0xa1][0xe0].responseHeader[0xa2][0xe0]&status[0x6][0x0][0x0][0x0][0x0][0xe0]%QTimeC"
+[DEBUG][2018-10-15 19:24:39,595][org.apache.http.impl.conn.PoolingClientConnectionManager]Connection [id: 1][route: {}->http://localhost:8983] can be kept alive indefinitely
+[DEBUG][2018-10-15 19:24:39,595][org.apache.http.impl.conn.PoolingClientConnectionManager]Connection released: [id: 1][route: {}->http://localhost:8983][total kept alive: 1; route allocated: 1 of 32; total allocated: 1 of 128]
+[DEBUG][2018-10-15 19:24:39,596][org.apache.http.impl.conn.PoolingClientConnectionManager]Connection request: [route: {}->http://localhost:8983][total kept alive: 1; route allocated: 1 of 32; total allocated: 1 of 128]
+[DEBUG][2018-10-15 19:24:39,596][org.apache.http.impl.conn.PoolingClientConnectionManager]Connection leased: [id: 1][route: {}->http://localhost:8983][total kept alive: 0; route allocated: 1 of 32; total allocated: 1 of 128]
+[DEBUG][2018-10-15 19:24:39,596][org.apache.http.impl.client.SystemDefaultHttpClient]Stale connection check
+[DEBUG][2018-10-15 19:24:39,598][org.apache.http.client.protocol.RequestAddCookies]CookieSpec selected: default
+[DEBUG][2018-10-15 19:24:39,599][org.apache.http.client.protocol.RequestAuthCache]Auth cache not set in the context
+[DEBUG][2018-10-15 19:24:39,599][org.apache.http.client.protocol.RequestTargetAuthentication]Target auth state: UNCHALLENGED
+[DEBUG][2018-10-15 19:24:39,600][org.apache.http.client.protocol.RequestProxyAuthentication]Proxy auth state: UNCHALLENGED
+[DEBUG][2018-10-15 19:24:39,600][org.apache.http.impl.client.SystemDefaultHttpClient]Attempt 1 to execute request
+[DEBUG][2018-10-15 19:24:39,600][org.apache.http.impl.conn.DefaultClientConnection]Sending request: POST /solr/test/update HTTP/1.1
+[DEBUG][2018-10-15 19:24:39,601][org.apache.http.wire] >> "POST /solr/test/update HTTP/1.1[\r][\n]"
+[DEBUG][2018-10-15 19:24:39,601][org.apache.http.wire] >> "Content-Type: application/x-www-form-urlencoded; charset=UTF-8[\r][\n]"
+[DEBUG][2018-10-15 19:24:39,601][org.apache.http.wire] >> "User-Agent: Solr[org.apache.solr.client.solrj.impl.HttpSolrClient] 1.0[\r][\n]"
+[DEBUG][2018-10-15 19:24:39,601][org.apache.http.wire] >> "Content-Length: 67[\r][\n]"
+[DEBUG][2018-10-15 19:24:39,602][org.apache.http.wire] >> "Host: localhost:8983[\r][\n]"
+[DEBUG][2018-10-15 19:24:39,603][org.apache.http.wire] >> "Connection: Keep-Alive[\r][\n]"
+[DEBUG][2018-10-15 19:24:39,604][org.apache.http.wire] >> "[\r][\n]"
+[DEBUG][2018-10-15 19:24:39,604][org.apache.http.headers]>> POST /solr/test/update HTTP/1.1
+[DEBUG][2018-10-15 19:24:39,604][org.apache.http.headers]>> Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+[DEBUG][2018-10-15 19:24:39,604][org.apache.http.headers]>> User-Agent: Solr[org.apache.solr.client.solrj.impl.HttpSolrClient] 1.0
+[DEBUG][2018-10-15 19:24:39,605][org.apache.http.headers]>> Content-Length: 67
+[DEBUG][2018-10-15 19:24:39,605][org.apache.http.headers]>> Host: localhost:8983
+[DEBUG][2018-10-15 19:24:39,605][org.apache.http.headers]>> Connection: Keep-Alive
+[DEBUG][2018-10-15 19:24:39,606][org.apache.http.wire] >> "commit=true&softCommit=false&waitSearcher=true&wt=javabin&version=2"
+[DEBUG][2018-10-15 19:24:39,640][org.apache.http.wire] << "HTTP/1.1 200 OK[\r][\n]"
+[DEBUG][2018-10-15 19:24:39,640][org.apache.http.wire] << "Content-Type: application/octet-stream[\r][\n]"
+[DEBUG][2018-10-15 19:24:39,640][org.apache.http.wire] << "Content-Length: 41[\r][\n]"
+[DEBUG][2018-10-15 19:24:39,640][org.apache.http.wire] << "[\r][\n]"
+[DEBUG][2018-10-15 19:24:39,641][org.apache.http.impl.conn.DefaultClientConnection]Receiving response: HTTP/1.1 200 OK
+[DEBUG][2018-10-15 19:24:39,649][org.apache.http.headers]<< HTTP/1.1 200 OK
+[DEBUG][2018-10-15 19:24:39,649][org.apache.http.headers]<< Content-Type: application/octet-stream
+[DEBUG][2018-10-15 19:24:39,650][org.apache.http.headers]<< Content-Length: 41
+[DEBUG][2018-10-15 19:24:39,650][org.apache.http.impl.client.SystemDefaultHttpClient]Connection can be kept alive indefinitely
+[DEBUG][2018-10-15 19:24:39,650][org.apache.http.wire] << "[0x2][0xa1][0xe0].responseHeader[0xa2][0xe0]&status[0x6][0x0][0x0][0x0][0x0][0xe0]%QTimeP[0x2]"
+[DEBUG][2018-10-15 19:24:39,651][org.apache.http.impl.conn.PoolingClientConnectionManager]Connection [id: 1][route: {}->http://localhost:8983] can be kept alive indefinitely
+[DEBUG][2018-10-15 19:24:39,651][org.apache.http.impl.conn.PoolingClientConnectionManager]Connection released: [id: 1][route: {}->http://localhost:8983][total kept alive: 1; route allocated: 1 of 32; total allocated: 1 of 128]
+[DEBUG][2018-10-15 19:24:39,651][org.apache.http.impl.conn.PoolingClientConnectionManager]Connection manager is shutting down
+[DEBUG][2018-10-15 19:24:39,652][org.apache.http.impl.conn.DefaultClientConnection]Connection 0.0.0.0:53282<->127.0.0.1:8983 closed
+[DEBUG][2018-10-15 19:24:39,653][org.apache.http.impl.conn.DefaultClientConnection]Connection 0.0.0.0:53282<->127.0.0.1:8983 closed
+[DEBUG][2018-10-15 19:24:39,653][org.apache.http.impl.conn.PoolingClientConnectionManager]Connection manager shut down
+[DEBUG][2018-10-15 19:24:39,655][org.apache.solr.client.solrj.impl.HttpClientUtil]Creating new http client, config:maxConnections=128&maxConnectionsPerHost=32&followRedirects=false
+[DEBUG][2018-10-15 19:24:39,665][org.apache.http.impl.conn.PoolingClientConnectionManager]Connection request: [route: {}->http://localhost:8983][total kept alive: 0; route allocated: 0 of 32; total allocated: 0 of 128]
+[DEBUG][2018-10-15 19:24:39,666][org.apache.http.impl.conn.PoolingClientConnectionManager]Connection leased: [id: 2][route: {}->http://localhost:8983][total kept alive: 0; route allocated: 1 of 32; total allocated: 1 of 128]
+[DEBUG][2018-10-15 19:24:39,666][org.apache.http.impl.conn.DefaultClientConnectionOperator]Connecting to localhost:8983
+[DEBUG][2018-10-15 19:24:39,672][org.apache.http.client.protocol.RequestAddCookies]CookieSpec selected: default
+[DEBUG][2018-10-15 19:24:39,673][org.apache.http.client.protocol.RequestAuthCache]Auth cache not set in the context
+[DEBUG][2018-10-15 19:24:39,674][org.apache.http.client.protocol.RequestTargetAuthentication]Target auth state: UNCHALLENGED
+[DEBUG][2018-10-15 19:24:39,674][org.apache.http.client.protocol.RequestProxyAuthentication]Proxy auth state: UNCHALLENGED
+[DEBUG][2018-10-15 19:24:39,674][org.apache.http.impl.client.SystemDefaultHttpClient]Attempt 1 to execute request
+[DEBUG][2018-10-15 19:24:39,676][org.apache.http.impl.conn.DefaultClientConnection]Sending request: GET /solr/test/select?q=%E5%91%A8%E6%98%9F%E9%A9%B0&fq=id%3A%5B0+TO+9%5D&df=name&sort=id+desc&start=0&rows=10&hl=true&hl.fl=name&hl.simple.pre=%3Cfont+color%3D%27red%27%3E&hl.simple.post=%3C%2Ffont%3E&wt=javabin&version=2 HTTP/1.1
+[DEBUG][2018-10-15 19:24:39,676][org.apache.http.wire] >> "GET /solr/test/select?q=%E5%91%A8%E6%98%9F%E9%A9%B0&fq=id%3A%5B0+TO+9%5D&df=name&sort=id+desc&start=0&rows=10&hl=true&hl.fl=name&hl.simple.pre=%3Cfont+color%3D%27red%27%3E&hl.simple.post=%3C%2Ffont%3E&wt=javabin&version=2 HTTP/1.1[\r][\n]"
+[DEBUG][2018-10-15 19:24:39,676][org.apache.http.wire] >> "User-Agent: Solr[org.apache.solr.client.solrj.impl.HttpSolrClient] 1.0[\r][\n]"
+[DEBUG][2018-10-15 19:24:39,680][org.apache.http.wire] >> "Host: localhost:8983[\r][\n]"
+[DEBUG][2018-10-15 19:24:39,680][org.apache.http.wire] >> "Connection: Keep-Alive[\r][\n]"
+[DEBUG][2018-10-15 19:24:39,680][org.apache.http.wire] >> "[\r][\n]"
+[DEBUG][2018-10-15 19:24:39,680][org.apache.http.headers]>> GET /solr/test/select?q=%E5%91%A8%E6%98%9F%E9%A9%B0&fq=id%3A%5B0+TO+9%5D&df=name&sort=id+desc&start=0&rows=10&hl=true&hl.fl=name&hl.simple.pre=%3Cfont+color%3D%27red%27%3E&hl.simple.post=%3C%2Ffont%3E&wt=javabin&version=2 HTTP/1.1
+[DEBUG][2018-10-15 19:24:39,683][org.apache.http.headers]>> User-Agent: Solr[org.apache.solr.client.solrj.impl.HttpSolrClient] 1.0
+[DEBUG][2018-10-15 19:24:39,683][org.apache.http.headers]>> Host: localhost:8983
+[DEBUG][2018-10-15 19:24:39,683][org.apache.http.headers]>> Connection: Keep-Alive
+[DEBUG][2018-10-15 19:24:39,691][org.apache.http.wire] << "HTTP/1.1 200 OK[\r][\n]"
+[DEBUG][2018-10-15 19:24:39,691][org.apache.http.wire] << "Content-Type: application/octet-stream[\r][\n]"
+[DEBUG][2018-10-15 19:24:39,692][org.apache.http.wire] << "Content-Length: 252[\r][\n]"
+[DEBUG][2018-10-15 19:24:39,692][org.apache.http.wire] << "[\r][\n]"
+[DEBUG][2018-10-15 19:24:39,693][org.apache.http.impl.conn.DefaultClientConnection]Receiving response: HTTP/1.1 200 OK
+[DEBUG][2018-10-15 19:24:39,694][org.apache.http.headers]<< HTTP/1.1 200 OK
+[DEBUG][2018-10-15 19:24:39,695][org.apache.http.headers]<< Content-Type: application/octet-stream
+[DEBUG][2018-10-15 19:24:39,695][org.apache.http.headers]<< Content-Length: 252
+[DEBUG][2018-10-15 19:24:39,698][org.apache.http.impl.client.SystemDefaultHttpClient]Connection can be kept alive indefinitely
+[DEBUG][2018-10-15 19:24:39,699][org.apache.http.wire] << "[0x2][0xa3][0xe0].responseHeader[0xa3][0xe0]&status[0x6][0x0][0x0][0x0][0x0][0xe0]%QTimeE[0xe0]&params[0xac][0xe0]!q)[0xe5][0x91][0xa8][0xe6][0x98][0x9f][0xe9][0xa9][0xb0][0xe0]"df$name[0xe0]"hl$true[0xe0].hl.simple.post'</font>[0xe0]%start!0[0xe0]"fq+id:[0 TO 9][0xe0]$sort'id desc[0xe0]%hl.fl$name[0xe0]$rows"10[0xe0]"wt'javabin[0xe0]'version!2[0xe0]-hl.simple.pre2<font color='red'>[0xe0](response[0xc][0x83]``[0x0][0x80][0xe0],highlighting[0xa0]"
+[DEBUG][2018-10-15 19:24:39,702][org.apache.http.impl.conn.PoolingClientConnectionManager]Connection [id: 2][route: {}->http://localhost:8983] can be kept alive indefinitely
+[DEBUG][2018-10-15 19:24:39,703][org.apache.http.impl.conn.PoolingClientConnectionManager]Connection released: [id: 2][route: {}->http://localhost:8983][total kept alive: 1; route allocated: 1 of 32; total allocated: 1 of 128]
+[DEBUG][2018-10-15 19:43:48,300][org.apache.solr.client.solrj.impl.HttpClientUtil]Creating new http client, config:maxConnections=128&maxConnectionsPerHost=32&followRedirects=false
+[DEBUG][2018-10-15 19:43:48,673][org.apache.http.impl.conn.PoolingClientConnectionManager]Connection request: [route: {}->http://localhost:8983][total kept alive: 0; route allocated: 0 of 32; total allocated: 0 of 128]
+[DEBUG][2018-10-15 19:43:48,690][org.apache.http.impl.conn.PoolingClientConnectionManager]Connection leased: [id: 0][route: {}->http://localhost:8983][total kept alive: 0; route allocated: 1 of 32; total allocated: 1 of 128]
+[DEBUG][2018-10-15 19:43:48,694][org.apache.http.impl.conn.DefaultClientConnectionOperator]Connecting to localhost:8983
+[DEBUG][2018-10-15 19:43:48,718][org.apache.http.client.protocol.RequestAddCookies]CookieSpec selected: default
+[DEBUG][2018-10-15 19:43:48,720][org.apache.http.client.protocol.RequestAuthCache]Auth cache not set in the context
+[DEBUG][2018-10-15 19:43:48,720][org.apache.http.client.protocol.RequestTargetAuthentication]Target auth state: UNCHALLENGED
+[DEBUG][2018-10-15 19:43:48,721][org.apache.http.client.protocol.RequestProxyAuthentication]Proxy auth state: UNCHALLENGED
+[DEBUG][2018-10-15 19:43:48,722][org.apache.http.impl.client.SystemDefaultHttpClient]Attempt 1 to execute request
+[DEBUG][2018-10-15 19:43:48,723][org.apache.http.impl.conn.DefaultClientConnection]Sending request: POST /solr/ HTTP/1.1
+[DEBUG][2018-10-15 19:43:48,724][org.apache.http.wire] >> "POST /solr/ HTTP/1.1[\r][\n]"
+[DEBUG][2018-10-15 19:43:48,725][org.apache.http.wire] >> "User-Agent: Solr[org.apache.solr.client.solrj.impl.HttpSolrClient] 1.0[\r][\n]"
+[DEBUG][2018-10-15 19:43:48,726][org.apache.http.wire] >> "Transfer-Encoding: chunked[\r][\n]"
+[DEBUG][2018-10-15 19:43:48,726][org.apache.http.wire] >> "Content-Type: application/xml; charset=UTF-8[\r][\n]"
+[DEBUG][2018-10-15 19:43:48,727][org.apache.http.wire] >> "Host: localhost:8983[\r][\n]"
+[DEBUG][2018-10-15 19:43:48,727][org.apache.http.wire] >> "Connection: Keep-Alive[\r][\n]"
+[DEBUG][2018-10-15 19:43:48,731][org.apache.http.wire] >> "[\r][\n]"
+[DEBUG][2018-10-15 19:43:48,733][org.apache.http.headers]>> POST /solr/ HTTP/1.1
+[DEBUG][2018-10-15 19:43:48,733][org.apache.http.headers]>> User-Agent: Solr[org.apache.solr.client.solrj.impl.HttpSolrClient] 1.0
+[DEBUG][2018-10-15 19:43:48,735][org.apache.http.headers]>> Transfer-Encoding: chunked
+[DEBUG][2018-10-15 19:43:48,735][org.apache.http.headers]>> Content-Type: application/xml; charset=UTF-8
+[DEBUG][2018-10-15 19:43:48,735][org.apache.http.headers]>> Host: localhost:8983
+[DEBUG][2018-10-15 19:43:48,736][org.apache.http.headers]>> Connection: Keep-Alive
+[DEBUG][2018-10-15 19:43:48,738][org.apache.http.wire] >> "c4[\r][\n]"
+[DEBUG][2018-10-15 19:43:48,739][org.apache.http.wire] >> "<add><doc boost="1.0"><field name="id">1</field><field name="item_title">sansung[0xe7][0x88][0x86][0xe7][0x82][0xb8][0xe7][0x89][0x8c][0xe6][0x89][0x8b][0xe6][0x9c][0xba]</field><field name="item_price">666</field><field name="item_image">www.boom.png</field></doc></add>"
+[DEBUG][2018-10-15 19:43:48,740][org.apache.http.wire] >> "[\r][\n]"
+[DEBUG][2018-10-15 19:43:48,742][org.apache.http.wire] >> "0[\r][\n]"
+[DEBUG][2018-10-15 19:43:48,742][org.apache.http.wire] >> "[\r][\n]"
+[DEBUG][2018-10-15 19:43:48,750][org.apache.http.wire] << "HTTP/1.1 405 HTTP method POST is not supported by this URL[\r][\n]"
+[DEBUG][2018-10-15 19:43:48,765][org.apache.http.wire] << "Cache-Control: must-revalidate,no-cache,no-store[\r][\n]"
+[DEBUG][2018-10-15 19:43:48,766][org.apache.http.wire] << "Content-Type: text/html;charset=iso-8859-1[\r][\n]"
+[DEBUG][2018-10-15 19:43:48,767][org.apache.http.wire] << "Content-Length: 319[\r][\n]"
+[DEBUG][2018-10-15 19:43:48,767][org.apache.http.wire] << "[\r][\n]"
+[DEBUG][2018-10-15 19:43:48,768][org.apache.http.impl.conn.DefaultClientConnection]Receiving response: HTTP/1.1 405 HTTP method POST is not supported by this URL
+[DEBUG][2018-10-15 19:43:48,768][org.apache.http.headers]<< HTTP/1.1 405 HTTP method POST is not supported by this URL
+[DEBUG][2018-10-15 19:43:48,769][org.apache.http.headers]<< Cache-Control: must-revalidate,no-cache,no-store
+[DEBUG][2018-10-15 19:43:48,769][org.apache.http.headers]<< Content-Type: text/html;charset=iso-8859-1
+[DEBUG][2018-10-15 19:43:48,770][org.apache.http.headers]<< Content-Length: 319
+[DEBUG][2018-10-15 19:43:48,779][org.apache.http.impl.client.SystemDefaultHttpClient]Connection can be kept alive indefinitely
+[DEBUG][2018-10-15 19:43:48,810][org.apache.http.wire] << "<html>[\n]"
+[DEBUG][2018-10-15 19:43:48,811][org.apache.http.wire] << "<head>[\n]"
+[DEBUG][2018-10-15 19:43:48,811][org.apache.http.wire] << "<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>[\n]"
+[DEBUG][2018-10-15 19:43:48,811][org.apache.http.wire] << "<title>Error 405 HTTP method POST is not supported by this URL</title>[\n]"
+[DEBUG][2018-10-15 19:43:48,812][org.apache.http.wire] << "</head>[\n]"
+[DEBUG][2018-10-15 19:43:48,812][org.apache.http.wire] << "<body><h2>HTTP ERROR 405</h2>[\n]"
+[DEBUG][2018-10-15 19:43:48,813][org.apache.http.wire] << "<p>Problem accessing /solr/index.html. Reason:[\n]"
+[DEBUG][2018-10-15 19:43:48,813][org.apache.http.wire] << "<pre>    HTTP method POST is not supported by this URL</pre></p>[\n]"
+[DEBUG][2018-10-15 19:43:48,813][org.apache.http.wire] << "</body>[\n]"
+[DEBUG][2018-10-15 19:43:48,813][org.apache.http.wire] << "</html>[\n]"
+[DEBUG][2018-10-15 19:43:48,814][org.apache.http.impl.conn.PoolingClientConnectionManager]Connection [id: 0][route: {}->http://localhost:8983] can be kept alive indefinitely
+[DEBUG][2018-10-15 19:43:48,814][org.apache.http.impl.conn.PoolingClientConnectionManager]Connection released: [id: 0][route: {}->http://localhost:8983][total kept alive: 1; route allocated: 1 of 32; total allocated: 1 of 128]
+[DEBUG][2018-10-15 19:44:07,087][org.apache.solr.client.solrj.impl.HttpClientUtil]Creating new http client, config:maxConnections=128&maxConnectionsPerHost=32&followRedirects=false
+[DEBUG][2018-10-15 19:44:07,502][org.apache.http.impl.conn.PoolingClientConnectionManager]Connection request: [route: {}->http://localhost:8983][total kept alive: 0; route allocated: 0 of 32; total allocated: 0 of 128]
+[DEBUG][2018-10-15 19:44:07,515][org.apache.http.impl.conn.PoolingClientConnectionManager]Connection leased: [id: 0][route: {}->http://localhost:8983][total kept alive: 0; route allocated: 1 of 32; total allocated: 1 of 128]
+[DEBUG][2018-10-15 19:44:07,519][org.apache.http.impl.conn.DefaultClientConnectionOperator]Connecting to localhost:8983
+[DEBUG][2018-10-15 19:44:07,543][org.apache.http.client.protocol.RequestAddCookies]CookieSpec selected: default
+[DEBUG][2018-10-15 19:44:07,547][org.apache.http.client.protocol.RequestAuthCache]Auth cache not set in the context
+[DEBUG][2018-10-15 19:44:07,549][org.apache.http.client.protocol.RequestTargetAuthentication]Target auth state: UNCHALLENGED
+[DEBUG][2018-10-15 19:44:07,551][org.apache.http.client.protocol.RequestProxyAuthentication]Proxy auth state: UNCHALLENGED
+[DEBUG][2018-10-15 19:44:07,552][org.apache.http.impl.client.SystemDefaultHttpClient]Attempt 1 to execute request
+[DEBUG][2018-10-15 19:44:07,553][org.apache.http.impl.conn.DefaultClientConnection]Sending request: POST /solr/ HTTP/1.1
+[DEBUG][2018-10-15 19:44:07,554][org.apache.http.wire] >> "POST /solr/ HTTP/1.1[\r][\n]"
+[DEBUG][2018-10-15 19:44:07,559][org.apache.http.wire] >> "User-Agent: Solr[org.apache.solr.client.solrj.impl.HttpSolrClient] 1.0[\r][\n]"
+[DEBUG][2018-10-15 19:44:07,560][org.apache.http.wire] >> "Transfer-Encoding: chunked[\r][\n]"
+[DEBUG][2018-10-15 19:44:07,560][org.apache.http.wire] >> "Content-Type: application/xml; charset=UTF-8[\r][\n]"
+[DEBUG][2018-10-15 19:44:07,561][org.apache.http.wire] >> "Host: localhost:8983[\r][\n]"
+[DEBUG][2018-10-15 19:44:07,561][org.apache.http.wire] >> "Connection: Keep-Alive[\r][\n]"
+[DEBUG][2018-10-15 19:44:07,564][org.apache.http.wire] >> "[\r][\n]"
+[DEBUG][2018-10-15 19:44:07,565][org.apache.http.headers]>> POST /solr/ HTTP/1.1
+[DEBUG][2018-10-15 19:44:07,566][org.apache.http.headers]>> User-Agent: Solr[org.apache.solr.client.solrj.impl.HttpSolrClient] 1.0
+[DEBUG][2018-10-15 19:44:07,566][org.apache.http.headers]>> Transfer-Encoding: chunked
+[DEBUG][2018-10-15 19:44:07,567][org.apache.http.headers]>> Content-Type: application/xml; charset=UTF-8
+[DEBUG][2018-10-15 19:44:07,567][org.apache.http.headers]>> Host: localhost:8983
+[DEBUG][2018-10-15 19:44:07,568][org.apache.http.headers]>> Connection: Keep-Alive
+[DEBUG][2018-10-15 19:44:07,570][org.apache.http.wire] >> "6d[\r][\n]"
+[DEBUG][2018-10-15 19:44:07,570][org.apache.http.wire] >> "<add><doc boost="1.0"><field name="id">1</field><field name="name">sansung[0xe7][0x88][0x86][0xe7][0x82][0xb8][0xe7][0x89][0x8c][0xe6][0x89][0x8b][0xe6][0x9c][0xba]</field></doc></add>"
+[DEBUG][2018-10-15 19:44:07,571][org.apache.http.wire] >> "[\r][\n]"
+[DEBUG][2018-10-15 19:44:07,572][org.apache.http.wire] >> "0[\r][\n]"
+[DEBUG][2018-10-15 19:44:07,572][org.apache.http.wire] >> "[\r][\n]"
+[DEBUG][2018-10-15 19:44:07,575][org.apache.http.wire] << "HTTP/1.1 405 HTTP method POST is not supported by this URL[\r][\n]"
+[DEBUG][2018-10-15 19:44:07,580][org.apache.http.wire] << "Cache-Control: must-revalidate,no-cache,no-store[\r][\n]"
+[DEBUG][2018-10-15 19:44:07,580][org.apache.http.wire] << "Content-Type: text/html;charset=iso-8859-1[\r][\n]"
+[DEBUG][2018-10-15 19:44:07,581][org.apache.http.wire] << "Content-Length: 319[\r][\n]"
+[DEBUG][2018-10-15 19:44:07,583][org.apache.http.wire] << "[\r][\n]"
+[DEBUG][2018-10-15 19:44:07,584][org.apache.http.impl.conn.DefaultClientConnection]Receiving response: HTTP/1.1 405 HTTP method POST is not supported by this URL
+[DEBUG][2018-10-15 19:44:07,584][org.apache.http.headers]<< HTTP/1.1 405 HTTP method POST is not supported by this URL
+[DEBUG][2018-10-15 19:44:07,585][org.apache.http.headers]<< Cache-Control: must-revalidate,no-cache,no-store
+[DEBUG][2018-10-15 19:44:07,585][org.apache.http.headers]<< Content-Type: text/html;charset=iso-8859-1
+[DEBUG][2018-10-15 19:44:07,589][org.apache.http.headers]<< Content-Length: 319
+[DEBUG][2018-10-15 19:44:07,602][org.apache.http.impl.client.SystemDefaultHttpClient]Connection can be kept alive indefinitely
+[DEBUG][2018-10-15 19:44:07,638][org.apache.http.wire] << "<html>[\n]"
+[DEBUG][2018-10-15 19:44:07,639][org.apache.http.wire] << "<head>[\n]"
+[DEBUG][2018-10-15 19:44:07,641][org.apache.http.wire] << "<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>[\n]"
+[DEBUG][2018-10-15 19:44:07,641][org.apache.http.wire] << "<title>Error 405 HTTP method POST is not supported by this URL</title>[\n]"
+[DEBUG][2018-10-15 19:44:07,642][org.apache.http.wire] << "</head>[\n]"
+[DEBUG][2018-10-15 19:44:07,642][org.apache.http.wire] << "<body><h2>HTTP ERROR 405</h2>[\n]"
+[DEBUG][2018-10-15 19:44:07,644][org.apache.http.wire] << "<p>Problem accessing /solr/index.html. Reason:[\n]"
+[DEBUG][2018-10-15 19:44:07,644][org.apache.http.wire] << "<pre>    HTTP method POST is not supported by this URL</pre></p>[\n]"
+[DEBUG][2018-10-15 19:44:07,646][org.apache.http.wire] << "</body>[\n]"
+[DEBUG][2018-10-15 19:44:07,647][org.apache.http.wire] << "</html>[\n]"
+[DEBUG][2018-10-15 19:44:07,647][org.apache.http.impl.conn.PoolingClientConnectionManager]Connection [id: 0][route: {}->http://localhost:8983] can be kept alive indefinitely
+[DEBUG][2018-10-15 19:44:07,648][org.apache.http.impl.conn.PoolingClientConnectionManager]Connection released: [id: 0][route: {}->http://localhost:8983][total kept alive: 1; route allocated: 1 of 32; total allocated: 1 of 128]
+[DEBUG][2018-10-15 19:45:30,132][org.apache.solr.client.solrj.impl.HttpClientUtil]Creating new http client, config:maxConnections=128&maxConnectionsPerHost=32&followRedirects=false
+[DEBUG][2018-10-15 19:45:30,548][org.apache.http.impl.conn.PoolingClientConnectionManager]Connection request: [route: {}->http://localhost:8983][total kept alive: 0; route allocated: 0 of 32; total allocated: 0 of 128]
+[DEBUG][2018-10-15 19:45:30,562][org.apache.http.impl.conn.PoolingClientConnectionManager]Connection leased: [id: 0][route: {}->http://localhost:8983][total kept alive: 0; route allocated: 1 of 32; total allocated: 1 of 128]
+[DEBUG][2018-10-15 19:45:30,565][org.apache.http.impl.conn.DefaultClientConnectionOperator]Connecting to localhost:8983
+[DEBUG][2018-10-15 19:45:30,587][org.apache.http.client.protocol.RequestAddCookies]CookieSpec selected: default
+[DEBUG][2018-10-15 19:45:30,591][org.apache.http.client.protocol.RequestAuthCache]Auth cache not set in the context
+[DEBUG][2018-10-15 19:45:30,592][org.apache.http.client.protocol.RequestTargetAuthentication]Target auth state: UNCHALLENGED
+[DEBUG][2018-10-15 19:45:30,593][org.apache.http.client.protocol.RequestProxyAuthentication]Proxy auth state: UNCHALLENGED
+[DEBUG][2018-10-15 19:45:30,594][org.apache.http.impl.client.SystemDefaultHttpClient]Attempt 1 to execute request
+[DEBUG][2018-10-15 19:45:30,595][org.apache.http.impl.conn.DefaultClientConnection]Sending request: POST /solr/ HTTP/1.1
+[DEBUG][2018-10-15 19:45:30,597][org.apache.http.wire] >> "POST /solr/ HTTP/1.1[\r][\n]"
+[DEBUG][2018-10-15 19:45:30,600][org.apache.http.wire] >> "User-Agent: Solr[org.apache.solr.client.solrj.impl.HttpSolrClient] 1.0[\r][\n]"
+[DEBUG][2018-10-15 19:45:30,600][org.apache.http.wire] >> "Transfer-Encoding: chunked[\r][\n]"
+[DEBUG][2018-10-15 19:45:30,600][org.apache.http.wire] >> "Content-Type: application/xml; charset=UTF-8[\r][\n]"
+[DEBUG][2018-10-15 19:45:30,601][org.apache.http.wire] >> "Host: localhost:8983[\r][\n]"
+[DEBUG][2018-10-15 19:45:30,601][org.apache.http.wire] >> "Connection: Keep-Alive[\r][\n]"
+[DEBUG][2018-10-15 19:45:30,604][org.apache.http.wire] >> "[\r][\n]"
+[DEBUG][2018-10-15 19:45:30,604][org.apache.http.headers]>> POST /solr/ HTTP/1.1
+[DEBUG][2018-10-15 19:45:30,605][org.apache.http.headers]>> User-Agent: Solr[org.apache.solr.client.solrj.impl.HttpSolrClient] 1.0
+[DEBUG][2018-10-15 19:45:30,605][org.apache.http.headers]>> Transfer-Encoding: chunked
+[DEBUG][2018-10-15 19:45:30,606][org.apache.http.headers]>> Content-Type: application/xml; charset=UTF-8
+[DEBUG][2018-10-15 19:45:30,606][org.apache.http.headers]>> Host: localhost:8983
+[DEBUG][2018-10-15 19:45:30,606][org.apache.http.headers]>> Connection: Keep-Alive
+[DEBUG][2018-10-15 19:45:30,608][org.apache.http.wire] >> "6d[\r][\n]"
+[DEBUG][2018-10-15 19:45:30,608][org.apache.http.wire] >> "<add><doc boost="1.0"><field name="id">1</field><field name="name">sansung[0xe7][0x88][0x86][0xe7][0x82][0xb8][0xe7][0x89][0x8c][0xe6][0x89][0x8b][0xe6][0x9c][0xba]</field></doc></add>"
+[DEBUG][2018-10-15 19:45:30,613][org.apache.http.wire] >> "[\r][\n]"
+[DEBUG][2018-10-15 19:45:30,614][org.apache.http.wire] >> "0[\r][\n]"
+[DEBUG][2018-10-15 19:45:30,615][org.apache.http.wire] >> "[\r][\n]"
+[DEBUG][2018-10-15 19:45:30,617][org.apache.http.wire] << "HTTP/1.1 405 HTTP method POST is not supported by this URL[\r][\n]"
+[DEBUG][2018-10-15 19:45:30,630][org.apache.http.wire] << "Cache-Control: must-revalidate,no-cache,no-store[\r][\n]"
+[DEBUG][2018-10-15 19:45:30,632][org.apache.http.wire] << "Content-Type: text/html;charset=iso-8859-1[\r][\n]"
+[DEBUG][2018-10-15 19:45:30,632][org.apache.http.wire] << "Content-Length: 319[\r][\n]"
+[DEBUG][2018-10-15 19:45:30,635][org.apache.http.wire] << "[\r][\n]"
+[DEBUG][2018-10-15 19:45:30,636][org.apache.http.impl.conn.DefaultClientConnection]Receiving response: HTTP/1.1 405 HTTP method POST is not supported by this URL
+[DEBUG][2018-10-15 19:45:30,636][org.apache.http.headers]<< HTTP/1.1 405 HTTP method POST is not supported by this URL
+[DEBUG][2018-10-15 19:45:30,638][org.apache.http.headers]<< Cache-Control: must-revalidate,no-cache,no-store
+[DEBUG][2018-10-15 19:45:30,639][org.apache.http.headers]<< Content-Type: text/html;charset=iso-8859-1
+[DEBUG][2018-10-15 19:45:30,642][org.apache.http.headers]<< Content-Length: 319
+[DEBUG][2018-10-15 19:45:30,655][org.apache.http.impl.client.SystemDefaultHttpClient]Connection can be kept alive indefinitely
+[DEBUG][2018-10-15 19:45:30,693][org.apache.http.wire] << "<html>[\n]"
+[DEBUG][2018-10-15 19:45:30,693][org.apache.http.wire] << "<head>[\n]"
+[DEBUG][2018-10-15 19:45:30,696][org.apache.http.wire] << "<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>[\n]"
+[DEBUG][2018-10-15 19:45:30,697][org.apache.http.wire] << "<title>Error 405 HTTP method POST is not supported by this URL</title>[\n]"
+[DEBUG][2018-10-15 19:45:30,697][org.apache.http.wire] << "</head>[\n]"
+[DEBUG][2018-10-15 19:45:30,697][org.apache.http.wire] << "<body><h2>HTTP ERROR 405</h2>[\n]"
+[DEBUG][2018-10-15 19:45:30,697][org.apache.http.wire] << "<p>Problem accessing /solr/index.html. Reason:[\n]"
+[DEBUG][2018-10-15 19:45:30,698][org.apache.http.wire] << "<pre>    HTTP method POST is not supported by this URL</pre></p>[\n]"
+[DEBUG][2018-10-15 19:45:30,698][org.apache.http.wire] << "</body>[\n]"
+[DEBUG][2018-10-15 19:45:30,698][org.apache.http.wire] << "</html>[\n]"
+[DEBUG][2018-10-15 19:45:30,700][org.apache.http.impl.conn.PoolingClientConnectionManager]Connection [id: 0][route: {}->http://localhost:8983] can be kept alive indefinitely
+[DEBUG][2018-10-15 19:45:30,700][org.apache.http.impl.conn.PoolingClientConnectionManager]Connection released: [id: 0][route: {}->http://localhost:8983][total kept alive: 1; route allocated: 1 of 32; total allocated: 1 of 128]
+[DEBUG][2018-10-15 19:46:13,572][org.apache.solr.client.solrj.impl.HttpClientUtil]Creating new http client, config:maxConnections=128&maxConnectionsPerHost=32&followRedirects=false
+[DEBUG][2018-10-15 19:46:13,933][org.apache.http.impl.conn.PoolingClientConnectionManager]Connection request: [route: {}->http://localhost:8983][total kept alive: 0; route allocated: 0 of 32; total allocated: 0 of 128]
+[DEBUG][2018-10-15 19:46:13,950][org.apache.http.impl.conn.PoolingClientConnectionManager]Connection leased: [id: 0][route: {}->http://localhost:8983][total kept alive: 0; route allocated: 1 of 32; total allocated: 1 of 128]
+[DEBUG][2018-10-15 19:46:13,954][org.apache.http.impl.conn.DefaultClientConnectionOperator]Connecting to localhost:8983
+[DEBUG][2018-10-15 19:46:13,982][org.apache.http.client.protocol.RequestAddCookies]CookieSpec selected: default
+[DEBUG][2018-10-15 19:46:13,985][org.apache.http.client.protocol.RequestAuthCache]Auth cache not set in the context
+[DEBUG][2018-10-15 19:46:13,985][org.apache.http.client.protocol.RequestTargetAuthentication]Target auth state: UNCHALLENGED
+[DEBUG][2018-10-15 19:46:13,986][org.apache.http.client.protocol.RequestProxyAuthentication]Proxy auth state: UNCHALLENGED
+[DEBUG][2018-10-15 19:46:13,987][org.apache.http.impl.client.SystemDefaultHttpClient]Attempt 1 to execute request
+[DEBUG][2018-10-15 19:46:13,987][org.apache.http.impl.conn.DefaultClientConnection]Sending request: POST /solr/test/update?wt=javabin&version=2 HTTP/1.1
+[DEBUG][2018-10-15 19:46:13,989][org.apache.http.wire] >> "POST /solr/test/update?wt=javabin&version=2 HTTP/1.1[\r][\n]"
+[DEBUG][2018-10-15 19:46:13,991][org.apache.http.wire] >> "User-Agent: Solr[org.apache.solr.client.solrj.impl.HttpSolrClient] 1.0[\r][\n]"
+[DEBUG][2018-10-15 19:46:13,991][org.apache.http.wire] >> "Transfer-Encoding: chunked[\r][\n]"
+[DEBUG][2018-10-15 19:46:13,992][org.apache.http.wire] >> "Content-Type: application/xml; charset=UTF-8[\r][\n]"
+[DEBUG][2018-10-15 19:46:13,992][org.apache.http.wire] >> "Host: localhost:8983[\r][\n]"
+[DEBUG][2018-10-15 19:46:13,992][org.apache.http.wire] >> "Connection: Keep-Alive[\r][\n]"
+[DEBUG][2018-10-15 19:46:13,994][org.apache.http.wire] >> "[\r][\n]"
+[DEBUG][2018-10-15 19:46:13,994][org.apache.http.headers]>> POST /solr/test/update?wt=javabin&version=2 HTTP/1.1
+[DEBUG][2018-10-15 19:46:13,995][org.apache.http.headers]>> User-Agent: Solr[org.apache.solr.client.solrj.impl.HttpSolrClient] 1.0
+[DEBUG][2018-10-15 19:46:13,995][org.apache.http.headers]>> Transfer-Encoding: chunked
+[DEBUG][2018-10-15 19:46:13,995][org.apache.http.headers]>> Content-Type: application/xml; charset=UTF-8
+[DEBUG][2018-10-15 19:46:13,996][org.apache.http.headers]>> Host: localhost:8983
+[DEBUG][2018-10-15 19:46:13,996][org.apache.http.headers]>> Connection: Keep-Alive
+[DEBUG][2018-10-15 19:46:13,997][org.apache.http.wire] >> "6d[\r][\n]"
+[DEBUG][2018-10-15 19:46:13,997][org.apache.http.wire] >> "<add><doc boost="1.0"><field name="id">1</field><field name="name">sansung[0xe7][0x88][0x86][0xe7][0x82][0xb8][0xe7][0x89][0x8c][0xe6][0x89][0x8b][0xe6][0x9c][0xba]</field></doc></add>"
+[DEBUG][2018-10-15 19:46:13,997][org.apache.http.wire] >> "[\r][\n]"
+[DEBUG][2018-10-15 19:46:13,998][org.apache.http.wire] >> "0[\r][\n]"
+[DEBUG][2018-10-15 19:46:13,998][org.apache.http.wire] >> "[\r][\n]"
+[DEBUG][2018-10-15 19:46:14,003][org.apache.http.wire] << "HTTP/1.1 200 OK[\r][\n]"
+[DEBUG][2018-10-15 19:46:14,007][org.apache.http.wire] << "Content-Type: application/octet-stream[\r][\n]"
+[DEBUG][2018-10-15 19:46:14,008][org.apache.http.wire] << "Content-Length: 40[\r][\n]"
+[DEBUG][2018-10-15 19:46:14,009][org.apache.http.wire] << "[\r][\n]"
+[DEBUG][2018-10-15 19:46:14,011][org.apache.http.impl.conn.DefaultClientConnection]Receiving response: HTTP/1.1 200 OK
+[DEBUG][2018-10-15 19:46:14,011][org.apache.http.headers]<< HTTP/1.1 200 OK
+[DEBUG][2018-10-15 19:46:14,011][org.apache.http.headers]<< Content-Type: application/octet-stream
+[DEBUG][2018-10-15 19:46:14,012][org.apache.http.headers]<< Content-Length: 40
+[DEBUG][2018-10-15 19:46:14,016][org.apache.http.impl.client.SystemDefaultHttpClient]Connection can be kept alive indefinitely
+[DEBUG][2018-10-15 19:46:14,049][org.apache.http.wire] << "[0x2][0xa1][0xe0].responseHeader[0xa2][0xe0]&status[0x6][0x0][0x0][0x0][0x0][0xe0]%QTimeC"
+[DEBUG][2018-10-15 19:46:14,051][org.apache.http.impl.conn.PoolingClientConnectionManager]Connection [id: 0][route: {}->http://localhost:8983] can be kept alive indefinitely
+[DEBUG][2018-10-15 19:46:14,052][org.apache.http.impl.conn.PoolingClientConnectionManager]Connection released: [id: 0][route: {}->http://localhost:8983][total kept alive: 1; route allocated: 1 of 32; total allocated: 1 of 128]
+[DEBUG][2018-10-15 19:46:14,055][org.apache.http.impl.conn.PoolingClientConnectionManager]Connection request: [route: {}->http://localhost:8983][total kept alive: 1; route allocated: 1 of 32; total allocated: 1 of 128]
+[DEBUG][2018-10-15 19:46:14,056][org.apache.http.impl.conn.PoolingClientConnectionManager]Connection leased: [id: 0][route: {}->http://localhost:8983][total kept alive: 0; route allocated: 1 of 32; total allocated: 1 of 128]
+[DEBUG][2018-10-15 19:46:14,056][org.apache.http.impl.client.SystemDefaultHttpClient]Stale connection check
+[DEBUG][2018-10-15 19:46:14,060][org.apache.http.client.protocol.RequestAddCookies]CookieSpec selected: default
+[DEBUG][2018-10-15 19:46:14,061][org.apache.http.client.protocol.RequestAuthCache]Auth cache not set in the context
+[DEBUG][2018-10-15 19:46:14,063][org.apache.http.client.protocol.RequestTargetAuthentication]Target auth state: UNCHALLENGED
+[DEBUG][2018-10-15 19:46:14,063][org.apache.http.client.protocol.RequestProxyAuthentication]Proxy auth state: UNCHALLENGED
+[DEBUG][2018-10-15 19:46:14,063][org.apache.http.impl.client.SystemDefaultHttpClient]Attempt 1 to execute request
+[DEBUG][2018-10-15 19:46:14,063][org.apache.http.impl.conn.DefaultClientConnection]Sending request: POST /solr/test/update HTTP/1.1
+[DEBUG][2018-10-15 19:46:14,063][org.apache.http.wire] >> "POST /solr/test/update HTTP/1.1[\r][\n]"
+[DEBUG][2018-10-15 19:46:14,063][org.apache.http.wire] >> "Content-Type: application/x-www-form-urlencoded; charset=UTF-8[\r][\n]"
+[DEBUG][2018-10-15 19:46:14,064][org.apache.http.wire] >> "User-Agent: Solr[org.apache.solr.client.solrj.impl.HttpSolrClient] 1.0[\r][\n]"
+[DEBUG][2018-10-15 19:46:14,064][org.apache.http.wire] >> "Content-Length: 67[\r][\n]"
+[DEBUG][2018-10-15 19:46:14,064][org.apache.http.wire] >> "Host: localhost:8983[\r][\n]"
+[DEBUG][2018-10-15 19:46:14,064][org.apache.http.wire] >> "Connection: Keep-Alive[\r][\n]"
+[DEBUG][2018-10-15 19:46:14,064][org.apache.http.wire] >> "[\r][\n]"
+[DEBUG][2018-10-15 19:46:14,064][org.apache.http.headers]>> POST /solr/test/update HTTP/1.1
+[DEBUG][2018-10-15 19:46:14,065][org.apache.http.headers]>> Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+[DEBUG][2018-10-15 19:46:14,065][org.apache.http.headers]>> User-Agent: Solr[org.apache.solr.client.solrj.impl.HttpSolrClient] 1.0
+[DEBUG][2018-10-15 19:46:14,065][org.apache.http.headers]>> Content-Length: 67
+[DEBUG][2018-10-15 19:46:14,065][org.apache.http.headers]>> Host: localhost:8983
+[DEBUG][2018-10-15 19:46:14,065][org.apache.http.headers]>> Connection: Keep-Alive
+[DEBUG][2018-10-15 19:46:14,066][org.apache.http.wire] >> "commit=true&softCommit=false&waitSearcher=true&wt=javabin&version=2"
+[DEBUG][2018-10-15 19:46:14,211][org.apache.http.wire] << "HTTP/1.1 200 OK[\r][\n]"
+[DEBUG][2018-10-15 19:46:14,212][org.apache.http.wire] << "Content-Type: application/octet-stream[\r][\n]"
+[DEBUG][2018-10-15 19:46:14,212][org.apache.http.wire] << "Content-Length: 41[\r][\n]"
+[DEBUG][2018-10-15 19:46:14,213][org.apache.http.wire] << "[\r][\n]"
+[DEBUG][2018-10-15 19:46:14,213][org.apache.http.impl.conn.DefaultClientConnection]Receiving response: HTTP/1.1 200 OK
+[DEBUG][2018-10-15 19:46:14,213][org.apache.http.headers]<< HTTP/1.1 200 OK
+[DEBUG][2018-10-15 19:46:14,214][org.apache.http.headers]<< Content-Type: application/octet-stream
+[DEBUG][2018-10-15 19:46:14,214][org.apache.http.headers]<< Content-Length: 41
+[DEBUG][2018-10-15 19:46:14,217][org.apache.http.impl.client.SystemDefaultHttpClient]Connection can be kept alive indefinitely
+[DEBUG][2018-10-15 19:46:14,218][org.apache.http.wire] << "[0x2][0xa1][0xe0].responseHeader[0xa2][0xe0]&status[0x6][0x0][0x0][0x0][0x0][0xe0]%QTime_[0x8]"
+[DEBUG][2018-10-15 19:46:14,220][org.apache.http.impl.conn.PoolingClientConnectionManager]Connection [id: 0][route: {}->http://localhost:8983] can be kept alive indefinitely
+[DEBUG][2018-10-15 19:46:14,220][org.apache.http.impl.conn.PoolingClientConnectionManager]Connection released: [id: 0][route: {}->http://localhost:8983][total kept alive: 1; route allocated: 1 of 32; total allocated: 1 of 128]
+[DEBUG][2018-10-15 19:49:20,676][org.apache.solr.client.solrj.impl.HttpClientUtil]Creating new http client, config:maxConnections=128&maxConnectionsPerHost=32&followRedirects=false
+[DEBUG][2018-10-15 19:49:21,074][org.apache.http.impl.conn.PoolingClientConnectionManager]Connection request: [route: {}->http://localhost:8983][total kept alive: 0; route allocated: 0 of 32; total allocated: 0 of 128]
+[DEBUG][2018-10-15 19:49:21,091][org.apache.http.impl.conn.PoolingClientConnectionManager]Connection leased: [id: 0][route: {}->http://localhost:8983][total kept alive: 0; route allocated: 1 of 32; total allocated: 1 of 128]
+[DEBUG][2018-10-15 19:49:21,102][org.apache.http.impl.conn.DefaultClientConnectionOperator]Connecting to localhost:8983
+[DEBUG][2018-10-15 19:49:21,150][org.apache.http.client.protocol.RequestAddCookies]CookieSpec selected: default
+[DEBUG][2018-10-15 19:49:21,152][org.apache.http.client.protocol.RequestAuthCache]Auth cache not set in the context
+[DEBUG][2018-10-15 19:49:21,152][org.apache.http.client.protocol.RequestTargetAuthentication]Target auth state: UNCHALLENGED
+[DEBUG][2018-10-15 19:49:21,155][org.apache.http.client.protocol.RequestProxyAuthentication]Proxy auth state: UNCHALLENGED
+[DEBUG][2018-10-15 19:49:21,156][org.apache.http.impl.client.SystemDefaultHttpClient]Attempt 1 to execute request
+[DEBUG][2018-10-15 19:49:21,156][org.apache.http.impl.conn.DefaultClientConnection]Sending request: POST /solr/test/update?wt=javabin&version=2 HTTP/1.1
+[DEBUG][2018-10-15 19:49:21,162][org.apache.http.wire] >> "POST /solr/test/update?wt=javabin&version=2 HTTP/1.1[\r][\n]"
+[DEBUG][2018-10-15 19:49:21,163][org.apache.http.wire] >> "User-Agent: Solr[org.apache.solr.client.solrj.impl.HttpSolrClient] 1.0[\r][\n]"
+[DEBUG][2018-10-15 19:49:21,164][org.apache.http.wire] >> "Transfer-Encoding: chunked[\r][\n]"
+[DEBUG][2018-10-15 19:49:21,164][org.apache.http.wire] >> "Content-Type: application/xml; charset=UTF-8[\r][\n]"
+[DEBUG][2018-10-15 19:49:21,164][org.apache.http.wire] >> "Host: localhost:8983[\r][\n]"
+[DEBUG][2018-10-15 19:49:21,169][org.apache.http.wire] >> "Connection: Keep-Alive[\r][\n]"
+[DEBUG][2018-10-15 19:49:21,171][org.apache.http.wire] >> "[\r][\n]"
+[DEBUG][2018-10-15 19:49:21,171][org.apache.http.headers]>> POST /solr/test/update?wt=javabin&version=2 HTTP/1.1
+[DEBUG][2018-10-15 19:49:21,171][org.apache.http.headers]>> User-Agent: Solr[org.apache.solr.client.solrj.impl.HttpSolrClient] 1.0
+[DEBUG][2018-10-15 19:49:21,172][org.apache.http.headers]>> Transfer-Encoding: chunked
+[DEBUG][2018-10-15 19:49:21,172][org.apache.http.headers]>> Content-Type: application/xml; charset=UTF-8
+[DEBUG][2018-10-15 19:49:21,172][org.apache.http.headers]>> Host: localhost:8983
+[DEBUG][2018-10-15 19:49:21,183][org.apache.http.headers]>> Connection: Keep-Alive
+[DEBUG][2018-10-15 19:49:21,184][org.apache.http.wire] >> "6d[\r][\n]"
+[DEBUG][2018-10-15 19:49:21,185][org.apache.http.wire] >> "<add><doc boost="1.0"><field name="id">1</field><field name="name">sansung[0xe7][0x88][0x86][0xe7][0x82][0xb8][0xe7][0x89][0x8c][0xe6][0x89][0x8b][0xe6][0x9c][0xba]</field></doc></add>"
+[DEBUG][2018-10-15 19:49:21,185][org.apache.http.wire] >> "[\r][\n]"
+[DEBUG][2018-10-15 19:49:21,185][org.apache.http.wire] >> "0[\r][\n]"
+[DEBUG][2018-10-15 19:49:21,186][org.apache.http.wire] >> "[\r][\n]"
+[DEBUG][2018-10-15 19:49:21,191][org.apache.http.wire] << "HTTP/1.1 200 OK[\r][\n]"
+[DEBUG][2018-10-15 19:49:21,193][org.apache.http.wire] << "Content-Type: application/octet-stream[\r][\n]"
+[DEBUG][2018-10-15 19:49:21,193][org.apache.http.wire] << "Content-Length: 40[\r][\n]"
+[DEBUG][2018-10-15 19:49:21,194][org.apache.http.wire] << "[\r][\n]"
+[DEBUG][2018-10-15 19:49:21,195][org.apache.http.impl.conn.DefaultClientConnection]Receiving response: HTTP/1.1 200 OK
+[DEBUG][2018-10-15 19:49:21,195][org.apache.http.headers]<< HTTP/1.1 200 OK
+[DEBUG][2018-10-15 19:49:21,195][org.apache.http.headers]<< Content-Type: application/octet-stream
+[DEBUG][2018-10-15 19:49:21,196][org.apache.http.headers]<< Content-Length: 40
+[DEBUG][2018-10-15 19:49:21,199][org.apache.http.impl.client.SystemDefaultHttpClient]Connection can be kept alive indefinitely
+[DEBUG][2018-10-15 19:49:21,224][org.apache.http.wire] << "[0x2][0xa1][0xe0].responseHeader[0xa2][0xe0]&status[0x6][0x0][0x0][0x0][0x0][0xe0]%QTimeC"
+[DEBUG][2018-10-15 19:49:21,226][org.apache.http.impl.conn.PoolingClientConnectionManager]Connection [id: 0][route: {}->http://localhost:8983] can be kept alive indefinitely
+[DEBUG][2018-10-15 19:49:21,226][org.apache.http.impl.conn.PoolingClientConnectionManager]Connection released: [id: 0][route: {}->http://localhost:8983][total kept alive: 1; route allocated: 1 of 32; total allocated: 1 of 128]
+[DEBUG][2018-10-15 19:49:21,228][org.apache.http.impl.conn.PoolingClientConnectionManager]Connection request: [route: {}->http://localhost:8983][total kept alive: 1; route allocated: 1 of 32; total allocated: 1 of 128]
+[DEBUG][2018-10-15 19:49:21,229][org.apache.http.impl.conn.PoolingClientConnectionManager]Connection leased: [id: 0][route: {}->http://localhost:8983][total kept alive: 0; route allocated: 1 of 32; total allocated: 1 of 128]
+[DEBUG][2018-10-15 19:49:21,229][org.apache.http.impl.client.SystemDefaultHttpClient]Stale connection check
+[DEBUG][2018-10-15 19:49:21,231][org.apache.http.client.protocol.RequestAddCookies]CookieSpec selected: default
+[DEBUG][2018-10-15 19:49:21,232][org.apache.http.client.protocol.RequestAuthCache]Auth cache not set in the context
+[DEBUG][2018-10-15 19:49:21,232][org.apache.http.client.protocol.RequestTargetAuthentication]Target auth state: UNCHALLENGED
+[DEBUG][2018-10-15 19:49:21,232][org.apache.http.client.protocol.RequestProxyAuthentication]Proxy auth state: UNCHALLENGED
+[DEBUG][2018-10-15 19:49:21,233][org.apache.http.impl.client.SystemDefaultHttpClient]Attempt 1 to execute request
+[DEBUG][2018-10-15 19:49:21,233][org.apache.http.impl.conn.DefaultClientConnection]Sending request: POST /solr/test/update HTTP/1.1
+[DEBUG][2018-10-15 19:49:21,233][org.apache.http.wire] >> "POST /solr/test/update HTTP/1.1[\r][\n]"
+[DEBUG][2018-10-15 19:49:21,233][org.apache.http.wire] >> "Content-Type: application/x-www-form-urlencoded; charset=UTF-8[\r][\n]"
+[DEBUG][2018-10-15 19:49:21,234][org.apache.http.wire] >> "User-Agent: Solr[org.apache.solr.client.solrj.impl.HttpSolrClient] 1.0[\r][\n]"
+[DEBUG][2018-10-15 19:49:21,234][org.apache.http.wire] >> "Content-Length: 67[\r][\n]"
+[DEBUG][2018-10-15 19:49:21,234][org.apache.http.wire] >> "Host: localhost:8983[\r][\n]"
+[DEBUG][2018-10-15 19:49:21,235][org.apache.http.wire] >> "Connection: Keep-Alive[\r][\n]"
+[DEBUG][2018-10-15 19:49:21,235][org.apache.http.wire] >> "[\r][\n]"
+[DEBUG][2018-10-15 19:49:21,235][org.apache.http.headers]>> POST /solr/test/update HTTP/1.1
+[DEBUG][2018-10-15 19:49:21,235][org.apache.http.headers]>> Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+[DEBUG][2018-10-15 19:49:21,235][org.apache.http.headers]>> User-Agent: Solr[org.apache.solr.client.solrj.impl.HttpSolrClient] 1.0
+[DEBUG][2018-10-15 19:49:21,235][org.apache.http.headers]>> Content-Length: 67
+[DEBUG][2018-10-15 19:49:21,236][org.apache.http.headers]>> Host: localhost:8983
+[DEBUG][2018-10-15 19:49:21,236][org.apache.http.headers]>> Connection: Keep-Alive
+[DEBUG][2018-10-15 19:49:21,236][org.apache.http.wire] >> "commit=true&softCommit=false&waitSearcher=true&wt=javabin&version=2"
+[DEBUG][2018-10-15 19:49:21,367][org.apache.http.wire] << "HTTP/1.1 200 OK[\r][\n]"
+[DEBUG][2018-10-15 19:49:21,368][org.apache.http.wire] << "Content-Type: application/octet-stream[\r][\n]"
+[DEBUG][2018-10-15 19:49:21,368][org.apache.http.wire] << "Content-Length: 41[\r][\n]"
+[DEBUG][2018-10-15 19:49:21,370][org.apache.http.wire] << "[\r][\n]"
+[DEBUG][2018-10-15 19:49:21,370][org.apache.http.impl.conn.DefaultClientConnection]Receiving response: HTTP/1.1 200 OK
+[DEBUG][2018-10-15 19:49:21,370][org.apache.http.headers]<< HTTP/1.1 200 OK
+[DEBUG][2018-10-15 19:49:21,371][org.apache.http.headers]<< Content-Type: application/octet-stream
+[DEBUG][2018-10-15 19:49:21,371][org.apache.http.headers]<< Content-Length: 41
+[DEBUG][2018-10-15 19:49:21,371][org.apache.http.impl.client.SystemDefaultHttpClient]Connection can be kept alive indefinitely
+[DEBUG][2018-10-15 19:49:21,372][org.apache.http.wire] << "[0x2][0xa1][0xe0].responseHeader[0xa2][0xe0]&status[0x6][0x0][0x0][0x0][0x0][0xe0]%QTimeQ[0x8]"
+[DEBUG][2018-10-15 19:49:21,373][org.apache.http.impl.conn.PoolingClientConnectionManager]Connection [id: 0][route: {}->http://localhost:8983] can be kept alive indefinitely
+[DEBUG][2018-10-15 19:49:21,373][org.apache.http.impl.conn.PoolingClientConnectionManager]Connection released: [id: 0][route: {}->http://localhost:8983][total kept alive: 1; route allocated: 1 of 32; total allocated: 1 of 128]
+[DEBUG][2018-10-15 19:55:52,507][org.apache.solr.client.solrj.impl.HttpClientUtil]Creating new http client, config:maxConnections=128&maxConnectionsPerHost=32&followRedirects=false
+[DEBUG][2018-10-15 19:55:52,954][org.apache.http.impl.conn.PoolingClientConnectionManager]Connection request: [route: {}->http://localhost:8983][total kept alive: 0; route allocated: 0 of 32; total allocated: 0 of 128]
+[DEBUG][2018-10-15 19:55:52,976][org.apache.http.impl.conn.PoolingClientConnectionManager]Connection leased: [id: 0][route: {}->http://localhost:8983][total kept alive: 0; route allocated: 1 of 32; total allocated: 1 of 128]
+[DEBUG][2018-10-15 19:55:52,981][org.apache.http.impl.conn.DefaultClientConnectionOperator]Connecting to localhost:8983
+[DEBUG][2018-10-15 19:55:53,022][org.apache.http.client.protocol.RequestAddCookies]CookieSpec selected: default
+[DEBUG][2018-10-15 19:55:53,026][org.apache.http.client.protocol.RequestAuthCache]Auth cache not set in the context
+[DEBUG][2018-10-15 19:55:53,030][org.apache.http.client.protocol.RequestTargetAuthentication]Target auth state: UNCHALLENGED
+[DEBUG][2018-10-15 19:55:53,031][org.apache.http.client.protocol.RequestProxyAuthentication]Proxy auth state: UNCHALLENGED
+[DEBUG][2018-10-15 19:55:53,033][org.apache.http.impl.client.SystemDefaultHttpClient]Attempt 1 to execute request
+[DEBUG][2018-10-15 19:55:53,033][org.apache.http.impl.conn.DefaultClientConnection]Sending request: POST /solr/test/update?wt=javabin&version=2 HTTP/1.1
+[DEBUG][2018-10-15 19:55:53,035][org.apache.http.wire] >> "POST /solr/test/update?wt=javabin&version=2 HTTP/1.1[\r][\n]"
+[DEBUG][2018-10-15 19:55:53,040][org.apache.http.wire] >> "User-Agent: Solr[org.apache.solr.client.solrj.impl.HttpSolrClient] 1.0[\r][\n]"
+[DEBUG][2018-10-15 19:55:53,040][org.apache.http.wire] >> "Transfer-Encoding: chunked[\r][\n]"
+[DEBUG][2018-10-15 19:55:53,042][org.apache.http.wire] >> "Content-Type: application/xml; charset=UTF-8[\r][\n]"
+[DEBUG][2018-10-15 19:55:53,043][org.apache.http.wire] >> "Host: localhost:8983[\r][\n]"
+[DEBUG][2018-10-15 19:55:53,043][org.apache.http.wire] >> "Connection: Keep-Alive[\r][\n]"
+[DEBUG][2018-10-15 19:55:53,047][org.apache.http.wire] >> "[\r][\n]"
+[DEBUG][2018-10-15 19:55:53,048][org.apache.http.headers]>> POST /solr/test/update?wt=javabin&version=2 HTTP/1.1
+[DEBUG][2018-10-15 19:55:53,049][org.apache.http.headers]>> User-Agent: Solr[org.apache.solr.client.solrj.impl.HttpSolrClient] 1.0
+[DEBUG][2018-10-15 19:55:53,049][org.apache.http.headers]>> Transfer-Encoding: chunked
+[DEBUG][2018-10-15 19:55:53,049][org.apache.http.headers]>> Content-Type: application/xml; charset=UTF-8
+[DEBUG][2018-10-15 19:55:53,050][org.apache.http.headers]>> Host: localhost:8983
+[DEBUG][2018-10-15 19:55:53,050][org.apache.http.headers]>> Connection: Keep-Alive
+[DEBUG][2018-10-15 19:55:53,051][org.apache.http.wire] >> "68[\r][\n]"
+[DEBUG][2018-10-15 19:55:53,052][org.apache.http.wire] >> "<add><doc boost="1.0"><field name="id">60</field><field name="name">vivo[0xe6][0x89][0x8b][0xe6][0x9c][0xba]hahaha</field></doc></add>"
+[DEBUG][2018-10-15 19:55:53,052][org.apache.http.wire] >> "[\r][\n]"
+[DEBUG][2018-10-15 19:55:53,053][org.apache.http.wire] >> "0[\r][\n]"
+[DEBUG][2018-10-15 19:55:53,053][org.apache.http.wire] >> "[\r][\n]"
+[DEBUG][2018-10-15 19:55:53,062][org.apache.http.wire] << "HTTP/1.1 200 OK[\r][\n]"
+[DEBUG][2018-10-15 19:55:53,071][org.apache.http.wire] << "Content-Type: application/octet-stream[\r][\n]"
+[DEBUG][2018-10-15 19:55:53,072][org.apache.http.wire] << "Content-Length: 40[\r][\n]"
+[DEBUG][2018-10-15 19:55:53,074][org.apache.http.wire] << "[\r][\n]"
+[DEBUG][2018-10-15 19:55:53,075][org.apache.http.impl.conn.DefaultClientConnection]Receiving response: HTTP/1.1 200 OK
+[DEBUG][2018-10-15 19:55:53,076][org.apache.http.headers]<< HTTP/1.1 200 OK
+[DEBUG][2018-10-15 19:55:53,077][org.apache.http.headers]<< Content-Type: application/octet-stream
+[DEBUG][2018-10-15 19:55:53,078][org.apache.http.headers]<< Content-Length: 40
+[DEBUG][2018-10-15 19:55:53,082][org.apache.http.impl.client.SystemDefaultHttpClient]Connection can be kept alive indefinitely
+[DEBUG][2018-10-15 19:55:53,105][org.apache.http.wire] << "[0x2][0xa1][0xe0].responseHeader[0xa2][0xe0]&status[0x6][0x0][0x0][0x0][0x0][0xe0]%QTimeD"
+[DEBUG][2018-10-15 19:55:53,107][org.apache.http.impl.conn.PoolingClientConnectionManager]Connection [id: 0][route: {}->http://localhost:8983] can be kept alive indefinitely
+[DEBUG][2018-10-15 19:55:53,107][org.apache.http.impl.conn.PoolingClientConnectionManager]Connection released: [id: 0][route: {}->http://localhost:8983][total kept alive: 1; route allocated: 1 of 32; total allocated: 1 of 128]
+[DEBUG][2018-10-15 19:55:53,110][org.apache.http.impl.conn.PoolingClientConnectionManager]Connection request: [route: {}->http://localhost:8983][total kept alive: 1; route allocated: 1 of 32; total allocated: 1 of 128]
+[DEBUG][2018-10-15 19:55:53,110][org.apache.http.impl.conn.PoolingClientConnectionManager]Connection leased: [id: 0][route: {}->http://localhost:8983][total kept alive: 0; route allocated: 1 of 32; total allocated: 1 of 128]
+[DEBUG][2018-10-15 19:55:53,110][org.apache.http.impl.client.SystemDefaultHttpClient]Stale connection check
+[DEBUG][2018-10-15 19:55:53,112][org.apache.http.client.protocol.RequestAddCookies]CookieSpec selected: default
+[DEBUG][2018-10-15 19:55:53,113][org.apache.http.client.protocol.RequestAuthCache]Auth cache not set in the context
+[DEBUG][2018-10-15 19:55:53,113][org.apache.http.client.protocol.RequestTargetAuthentication]Target auth state: UNCHALLENGED
+[DEBUG][2018-10-15 19:55:53,113][org.apache.http.client.protocol.RequestProxyAuthentication]Proxy auth state: UNCHALLENGED
+[DEBUG][2018-10-15 19:55:53,114][org.apache.http.impl.client.SystemDefaultHttpClient]Attempt 1 to execute request
+[DEBUG][2018-10-15 19:55:53,114][org.apache.http.impl.conn.DefaultClientConnection]Sending request: POST /solr/test/update HTTP/1.1
+[DEBUG][2018-10-15 19:55:53,114][org.apache.http.wire] >> "POST /solr/test/update HTTP/1.1[\r][\n]"
+[DEBUG][2018-10-15 19:55:53,114][org.apache.http.wire] >> "Content-Type: application/x-www-form-urlencoded; charset=UTF-8[\r][\n]"
+[DEBUG][2018-10-15 19:55:53,115][org.apache.http.wire] >> "User-Agent: Solr[org.apache.solr.client.solrj.impl.HttpSolrClient] 1.0[\r][\n]"
+[DEBUG][2018-10-15 19:55:53,115][org.apache.http.wire] >> "Content-Length: 67[\r][\n]"
+[DEBUG][2018-10-15 19:55:53,115][org.apache.http.wire] >> "Host: localhost:8983[\r][\n]"
+[DEBUG][2018-10-15 19:55:53,116][org.apache.http.wire] >> "Connection: Keep-Alive[\r][\n]"
+[DEBUG][2018-10-15 19:55:53,116][org.apache.http.wire] >> "[\r][\n]"
+[DEBUG][2018-10-15 19:55:53,116][org.apache.http.headers]>> POST /solr/test/update HTTP/1.1
+[DEBUG][2018-10-15 19:55:53,117][org.apache.http.headers]>> Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+[DEBUG][2018-10-15 19:55:53,117][org.apache.http.headers]>> User-Agent: Solr[org.apache.solr.client.solrj.impl.HttpSolrClient] 1.0
+[DEBUG][2018-10-15 19:55:53,117][org.apache.http.headers]>> Content-Length: 67
+[DEBUG][2018-10-15 19:55:53,117][org.apache.http.headers]>> Host: localhost:8983
+[DEBUG][2018-10-15 19:55:53,118][org.apache.http.headers]>> Connection: Keep-Alive
+[DEBUG][2018-10-15 19:55:53,118][org.apache.http.wire] >> "commit=true&softCommit=false&waitSearcher=true&wt=javabin&version=2"
+[DEBUG][2018-10-15 19:55:53,264][org.apache.http.wire] << "HTTP/1.1 200 OK[\r][\n]"
+[DEBUG][2018-10-15 19:55:53,265][org.apache.http.wire] << "Content-Type: application/octet-stream[\r][\n]"
+[DEBUG][2018-10-15 19:55:53,265][org.apache.http.wire] << "Content-Length: 41[\r][\n]"
+[DEBUG][2018-10-15 19:55:53,266][org.apache.http.wire] << "[\r][\n]"
+[DEBUG][2018-10-15 19:55:53,266][org.apache.http.impl.conn.DefaultClientConnection]Receiving response: HTTP/1.1 200 OK
+[DEBUG][2018-10-15 19:55:53,268][org.apache.http.headers]<< HTTP/1.1 200 OK
+[DEBUG][2018-10-15 19:55:53,269][org.apache.http.headers]<< Content-Type: application/octet-stream
+[DEBUG][2018-10-15 19:55:53,269][org.apache.http.headers]<< Content-Length: 41
+[DEBUG][2018-10-15 19:55:53,269][org.apache.http.impl.client.SystemDefaultHttpClient]Connection can be kept alive indefinitely
+[DEBUG][2018-10-15 19:55:53,270][org.apache.http.wire] << "[0x2][0xa1][0xe0].responseHeader[0xa2][0xe0]&status[0x6][0x0][0x0][0x0][0x0][0xe0]%QTimeP[0x9]"
+[DEBUG][2018-10-15 19:55:53,270][org.apache.http.impl.conn.PoolingClientConnectionManager]Connection [id: 0][route: {}->http://localhost:8983] can be kept alive indefinitely
+[DEBUG][2018-10-15 19:55:53,270][org.apache.http.impl.conn.PoolingClientConnectionManager]Connection released: [id: 0][route: {}->http://localhost:8983][total kept alive: 1; route allocated: 1 of 32; total allocated: 1 of 128]
+[DEBUG][2018-10-16 09:26:44,264][org.apache.solr.client.solrj.impl.HttpClientUtil]Creating new http client, config:maxConnections=128&maxConnectionsPerHost=32&followRedirects=false
+[DEBUG][2018-10-16 09:26:44,961][org.apache.http.impl.conn.PoolingClientConnectionManager]Connection request: [route: {}->http://localhost:8983][total kept alive: 0; route allocated: 0 of 32; total allocated: 0 of 128]
+[DEBUG][2018-10-16 09:26:44,974][org.apache.http.impl.conn.PoolingClientConnectionManager]Connection leased: [id: 0][route: {}->http://localhost:8983][total kept alive: 0; route allocated: 1 of 32; total allocated: 1 of 128]
+[DEBUG][2018-10-16 09:26:44,987][org.apache.http.impl.conn.DefaultClientConnectionOperator]Connecting to localhost:8983
+[DEBUG][2018-10-16 09:26:45,059][org.apache.http.client.protocol.RequestAddCookies]CookieSpec selected: default
+[DEBUG][2018-10-16 09:26:45,062][org.apache.http.client.protocol.RequestAuthCache]Auth cache not set in the context
+[DEBUG][2018-10-16 09:26:45,063][org.apache.http.client.protocol.RequestTargetAuthentication]Target auth state: UNCHALLENGED
+[DEBUG][2018-10-16 09:26:45,064][org.apache.http.client.protocol.RequestProxyAuthentication]Proxy auth state: UNCHALLENGED
+[DEBUG][2018-10-16 09:26:45,066][org.apache.http.impl.client.SystemDefaultHttpClient]Attempt 1 to execute request
+[DEBUG][2018-10-16 09:26:45,067][org.apache.http.impl.conn.DefaultClientConnection]Sending request: GET /solr/test/select?q=%E5%A4%8F%E6%99%AE&sort=id+desc&start=1&rows=5&df=item_title&hl=true&hl.simple.pre=%3Cem%3E&hl.simple.post=%3C%2Fem%3E&wt=javabin&version=2 HTTP/1.1
+[DEBUG][2018-10-16 09:26:45,068][org.apache.http.wire] >> "GET /solr/test/select?q=%E5%A4%8F%E6%99%AE&sort=id+desc&start=1&rows=5&df=item_title&hl=true&hl.simple.pre=%3Cem%3E&hl.simple.post=%3C%2Fem%3E&wt=javabin&version=2 HTTP/1.1[\r][\n]"
+[DEBUG][2018-10-16 09:26:45,075][org.apache.http.wire] >> "User-Agent: Solr[org.apache.solr.client.solrj.impl.HttpSolrClient] 1.0[\r][\n]"
+[DEBUG][2018-10-16 09:26:45,076][org.apache.http.wire] >> "Host: localhost:8983[\r][\n]"
+[DEBUG][2018-10-16 09:26:45,084][org.apache.http.wire] >> "Connection: Keep-Alive[\r][\n]"
+[DEBUG][2018-10-16 09:26:45,084][org.apache.http.wire] >> "[\r][\n]"
+[DEBUG][2018-10-16 09:26:45,087][org.apache.http.headers]>> GET /solr/test/select?q=%E5%A4%8F%E6%99%AE&sort=id+desc&start=1&rows=5&df=item_title&hl=true&hl.simple.pre=%3Cem%3E&hl.simple.post=%3C%2Fem%3E&wt=javabin&version=2 HTTP/1.1
+[DEBUG][2018-10-16 09:26:45,093][org.apache.http.headers]>> User-Agent: Solr[org.apache.solr.client.solrj.impl.HttpSolrClient] 1.0
+[DEBUG][2018-10-16 09:26:45,096][org.apache.http.headers]>> Host: localhost:8983
+[DEBUG][2018-10-16 09:26:45,096][org.apache.http.headers]>> Connection: Keep-Alive
+[DEBUG][2018-10-16 09:26:45,109][org.apache.http.wire] << "HTTP/1.1 400 Bad Request[\r][\n]"
+[DEBUG][2018-10-16 09:26:45,110][org.apache.http.wire] << "Cache-Control: no-cache, no-store[\r][\n]"
+[DEBUG][2018-10-16 09:26:45,111][org.apache.http.wire] << "Pragma: no-cache[\r][\n]"
+[DEBUG][2018-10-16 09:26:45,114][org.apache.http.wire] << "Expires: Sat, 01 Jan 2000 01:00:00 GMT[\r][\n]"
+[DEBUG][2018-10-16 09:26:45,114][org.apache.http.wire] << "Last-Modified: Tue, 16 Oct 2018 01:26:45 GMT[\r][\n]"
+[DEBUG][2018-10-16 09:26:45,114][org.apache.http.wire] << "ETag: "1667a7b7c6f"[\r][\n]"
+[DEBUG][2018-10-16 09:26:45,116][org.apache.http.wire] << "Content-Type: application/octet-stream[\r][\n]"
+[DEBUG][2018-10-16 09:26:45,117][org.apache.http.wire] << "Content-Length: 342[\r][\n]"
+[DEBUG][2018-10-16 09:26:45,117][org.apache.http.wire] << "[\r][\n]"
+[DEBUG][2018-10-16 09:26:45,122][org.apache.http.impl.conn.DefaultClientConnection]Receiving response: HTTP/1.1 400 Bad Request
+[DEBUG][2018-10-16 09:26:45,125][org.apache.http.headers]<< HTTP/1.1 400 Bad Request
+[DEBUG][2018-10-16 09:26:45,125][org.apache.http.headers]<< Cache-Control: no-cache, no-store
+[DEBUG][2018-10-16 09:26:45,125][org.apache.http.headers]<< Pragma: no-cache
+[DEBUG][2018-10-16 09:26:45,127][org.apache.http.headers]<< Expires: Sat, 01 Jan 2000 01:00:00 GMT
+[DEBUG][2018-10-16 09:26:45,129][org.apache.http.headers]<< Last-Modified: Tue, 16 Oct 2018 01:26:45 GMT
+[DEBUG][2018-10-16 09:26:45,129][org.apache.http.headers]<< ETag: "1667a7b7c6f"
+[DEBUG][2018-10-16 09:26:45,130][org.apache.http.headers]<< Content-Type: application/octet-stream
+[DEBUG][2018-10-16 09:26:45,130][org.apache.http.headers]<< Content-Length: 342
+[DEBUG][2018-10-16 09:26:45,153][org.apache.http.impl.client.SystemDefaultHttpClient]Connection can be kept alive indefinitely
+[DEBUG][2018-10-16 09:26:45,230][org.apache.http.wire] << "[0x2][0xa2][0xe0].responseHeader[0xa3][0xe0]&statusP[0x19][0xe0]%QTimeD[0xe0]&params[0xaa][0xe0]!q&[0xe5][0xa4][0x8f][0xe6][0x99][0xae][0xe0]"df*item_title[0xe0]"hl$true[0xe0].hl.simple.post%</em>[0xe0]%start!1[0xe0]$sort'id desc[0xe0]$rows!5[0xe0]"wt'javabin[0xe0]'version!2[0xe0]-hl.simple.pre$<em>[0xe0]%error[0xa3][0xe0](metadata[0xc2][0xe0]+error-class?[0x5]org.apache.solr.common.SolrException[0xe0]0root-error-class?[0x5]org.apache.solr.common.SolrException[0xe0]#msg:undefined field item_title[0xe0]$codeP[0x19]"
+[DEBUG][2018-10-16 09:26:45,247][org.apache.http.impl.conn.PoolingClientConnectionManager]Connection [id: 0][route: {}->http://localhost:8983] can be kept alive indefinitely
+[DEBUG][2018-10-16 09:26:45,248][org.apache.http.impl.conn.PoolingClientConnectionManager]Connection released: [id: 0][route: {}->http://localhost:8983][total kept alive: 1; route allocated: 1 of 32; total allocated: 1 of 128]
+[DEBUG][2018-10-16 09:30:26,895][org.apache.solr.client.solrj.impl.HttpClientUtil]Creating new http client, config:maxConnections=128&maxConnectionsPerHost=32&followRedirects=false
+[DEBUG][2018-10-16 09:30:27,281][org.apache.http.impl.conn.PoolingClientConnectionManager]Connection request: [route: {}->http://localhost:8983][total kept alive: 0; route allocated: 0 of 32; total allocated: 0 of 128]
+[DEBUG][2018-10-16 09:30:27,295][org.apache.http.impl.conn.PoolingClientConnectionManager]Connection leased: [id: 0][route: {}->http://localhost:8983][total kept alive: 0; route allocated: 1 of 32; total allocated: 1 of 128]
+[DEBUG][2018-10-16 09:30:27,298][org.apache.http.impl.conn.DefaultClientConnectionOperator]Connecting to localhost:8983
+[DEBUG][2018-10-16 09:30:27,328][org.apache.http.client.protocol.RequestAddCookies]CookieSpec selected: default
+[DEBUG][2018-10-16 09:30:27,330][org.apache.http.client.protocol.RequestAuthCache]Auth cache not set in the context
+[DEBUG][2018-10-16 09:30:27,330][org.apache.http.client.protocol.RequestTargetAuthentication]Target auth state: UNCHALLENGED
+[DEBUG][2018-10-16 09:30:27,331][org.apache.http.client.protocol.RequestProxyAuthentication]Proxy auth state: UNCHALLENGED
+[DEBUG][2018-10-16 09:30:27,332][org.apache.http.impl.client.SystemDefaultHttpClient]Attempt 1 to execute request
+[DEBUG][2018-10-16 09:30:27,332][org.apache.http.impl.conn.DefaultClientConnection]Sending request: GET /solr/test/select?q=*%3A*&sort=id+desc&start=1&rows=5&df=&hl=true&hl.simple.pre=%3Cem%3E&hl.simple.post=%3C%2Fem%3E&wt=javabin&version=2 HTTP/1.1
+[DEBUG][2018-10-16 09:30:27,335][org.apache.http.wire] >> "GET /solr/test/select?q=*%3A*&sort=id+desc&start=1&rows=5&df=&hl=true&hl.simple.pre=%3Cem%3E&hl.simple.post=%3C%2Fem%3E&wt=javabin&version=2 HTTP/1.1[\r][\n]"
+[DEBUG][2018-10-16 09:30:27,336][org.apache.http.wire] >> "User-Agent: Solr[org.apache.solr.client.solrj.impl.HttpSolrClient] 1.0[\r][\n]"
+[DEBUG][2018-10-16 09:30:27,339][org.apache.http.wire] >> "Host: localhost:8983[\r][\n]"
+[DEBUG][2018-10-16 09:30:27,340][org.apache.http.wire] >> "Connection: Keep-Alive[\r][\n]"
+[DEBUG][2018-10-16 09:30:27,342][org.apache.http.wire] >> "[\r][\n]"
+[DEBUG][2018-10-16 09:30:27,343][org.apache.http.headers]>> GET /solr/test/select?q=*%3A*&sort=id+desc&start=1&rows=5&df=&hl=true&hl.simple.pre=%3Cem%3E&hl.simple.post=%3C%2Fem%3E&wt=javabin&version=2 HTTP/1.1
+[DEBUG][2018-10-16 09:30:27,344][org.apache.http.headers]>> User-Agent: Solr[org.apache.solr.client.solrj.impl.HttpSolrClient] 1.0
+[DEBUG][2018-10-16 09:30:27,345][org.apache.http.headers]>> Host: localhost:8983
+[DEBUG][2018-10-16 09:30:27,345][org.apache.http.headers]>> Connection: Keep-Alive
+[DEBUG][2018-10-16 09:30:27,405][org.apache.http.wire] << "HTTP/1.1 200 OK[\r][\n]"
+[DEBUG][2018-10-16 09:30:27,407][org.apache.http.wire] << "Content-Type: application/octet-stream[\r][\n]"
+[DEBUG][2018-10-16 09:30:27,412][org.apache.http.wire] << "Content-Length: 386[\r][\n]"
+[DEBUG][2018-10-16 09:30:27,412][org.apache.http.wire] << "[\r][\n]"
+[DEBUG][2018-10-16 09:30:27,413][org.apache.http.impl.conn.DefaultClientConnection]Receiving response: HTTP/1.1 200 OK
+[DEBUG][2018-10-16 09:30:27,414][org.apache.http.headers]<< HTTP/1.1 200 OK
+[DEBUG][2018-10-16 09:30:27,414][org.apache.http.headers]<< Content-Type: application/octet-stream
+[DEBUG][2018-10-16 09:30:27,414][org.apache.http.headers]<< Content-Length: 386
+[DEBUG][2018-10-16 09:30:27,425][org.apache.http.impl.client.SystemDefaultHttpClient]Connection can be kept alive indefinitely
+[DEBUG][2018-10-16 09:30:27,444][org.apache.http.wire] << "[0x2][0xa3][0xe0].responseHeader[0xa3][0xe0]&status[0x6][0x0][0x0][0x0][0x0][0xe0]%QTime[[0x2][0xe0]&params[0xaa][0xe0]!q#*:*[0xe0]"df [0xe0]"hl$true[0xe0].hl.simple.post%</em>[0xe0]%start!1[0xe0]$sort'id desc[0xe0]$rows!5[0xe0]"wt'javabin[0xe0]'version!2[0xe0]-hl.simple.pre$<em>[0xe0](response[0xc][0x83]r[0x1]a[0x0][0x85][0xb][0xa3][0xe0]$name[0x81]&[0xe9][0xa9][0xac][0xe6][0xa1][0xb6][0xe0]"id"82[0xe0])_version_[0x7][0x16]grx[0x8a] [0x0][0x0][0xb][0xa3][0xf0][0x81]&[0xe6][0xb2][0x99][0xe5][0x8f][0x91][0xf1]"81[0xf2][0x7][0x16]grx[0x8a][0x10][0x0][0x0][0xb][0xa3][0xf0][0x81],[0xe7][0x94][0xb5][0xe7][0x83][0xad][0xe6][0xb0][0xb4][0xe5][0x99][0xa8][0xf1]"80[0xf2][0x7][0x16]grx[0x8a][0x0][0x0][0x1][0xb][0xa3][0xf0][0x81])[0xe5][0xb9][0xb3][0xe8][0xa1][0xa1][0xe8][0xbd][0xa6][0xf1]"79[0xf2][0x7][0x16]grx[0x8a][0x0][0x0][0x0][0xb][0xa3][0xf0][0x81]0[0xe6][0x89][0xab][0xe5][0x9c][0xb0][0xe6][0x9c][0xba][0xe5][0x99][0xa8][0xe4][0xba][0xba] [0xf1]"78[0xf2][0x7][0x16]grx[0x89][0xd0][0x0][0x1][0xe0],highlighting[0xa5][0xe0]"82[0xa0][0xe0]"81[0xa0][0xe0]"80[0xa0][0xe0]"79[0xa0][0xe0]"78[0xa0]"
+[DEBUG][2018-10-16 09:30:27,448][org.apache.http.impl.conn.PoolingClientConnectionManager]Connection [id: 0][route: {}->http://localhost:8983] can be kept alive indefinitely
+[DEBUG][2018-10-16 09:30:27,448][org.apache.http.impl.conn.PoolingClientConnectionManager]Connection released: [id: 0][route: {}->http://localhost:8983][total kept alive: 1; route allocated: 1 of 32; total allocated: 1 of 128]
+[DEBUG][2018-10-16 16:18:03,126][org.apache.solr.client.solrj.impl.HttpClientUtil]Creating new http client, config:maxConnections=128&maxConnectionsPerHost=32&followRedirects=false
+[DEBUG][2018-10-16 16:18:03,485][org.apache.http.impl.conn.PoolingClientConnectionManager]Connection request: [route: {}->http://localhost:8983][total kept alive: 0; route allocated: 0 of 32; total allocated: 0 of 128]
+[DEBUG][2018-10-16 16:18:03,505][org.apache.http.impl.conn.PoolingClientConnectionManager]Connection leased: [id: 0][route: {}->http://localhost:8983][total kept alive: 0; route allocated: 1 of 32; total allocated: 1 of 128]
+[DEBUG][2018-10-16 16:18:03,508][org.apache.http.impl.conn.DefaultClientConnectionOperator]Connecting to localhost:8983
+[DEBUG][2018-10-16 16:18:03,534][org.apache.http.client.protocol.RequestAddCookies]CookieSpec selected: default
+[DEBUG][2018-10-16 16:18:03,536][org.apache.http.client.protocol.RequestAuthCache]Auth cache not set in the context
+[DEBUG][2018-10-16 16:18:03,537][org.apache.http.client.protocol.RequestTargetAuthentication]Target auth state: UNCHALLENGED
+[DEBUG][2018-10-16 16:18:03,537][org.apache.http.client.protocol.RequestProxyAuthentication]Proxy auth state: UNCHALLENGED
+[DEBUG][2018-10-16 16:18:03,538][org.apache.http.impl.client.SystemDefaultHttpClient]Attempt 1 to execute request
+[DEBUG][2018-10-16 16:18:03,539][org.apache.http.impl.conn.DefaultClientConnection]Sending request: GET /solr/test/select?q=*%3A*&sort=id+desc&start=1&rows=5&df=&hl=true&hl.simple.pre=%3Cem%3E&hl.simple.post=%3C%2Fem%3E&wt=javabin&version=2 HTTP/1.1
+[DEBUG][2018-10-16 16:18:03,540][org.apache.http.wire] >> "GET /solr/test/select?q=*%3A*&sort=id+desc&start=1&rows=5&df=&hl=true&hl.simple.pre=%3Cem%3E&hl.simple.post=%3C%2Fem%3E&wt=javabin&version=2 HTTP/1.1[\r][\n]"
+[DEBUG][2018-10-16 16:18:03,542][org.apache.http.wire] >> "User-Agent: Solr[org.apache.solr.client.solrj.impl.HttpSolrClient] 1.0[\r][\n]"
+[DEBUG][2018-10-16 16:18:03,543][org.apache.http.wire] >> "Host: localhost:8983[\r][\n]"
+[DEBUG][2018-10-16 16:18:03,543][org.apache.http.wire] >> "Connection: Keep-Alive[\r][\n]"
+[DEBUG][2018-10-16 16:18:03,543][org.apache.http.wire] >> "[\r][\n]"
+[DEBUG][2018-10-16 16:18:03,544][org.apache.http.headers]>> GET /solr/test/select?q=*%3A*&sort=id+desc&start=1&rows=5&df=&hl=true&hl.simple.pre=%3Cem%3E&hl.simple.post=%3C%2Fem%3E&wt=javabin&version=2 HTTP/1.1
+[DEBUG][2018-10-16 16:18:03,545][org.apache.http.headers]>> User-Agent: Solr[org.apache.solr.client.solrj.impl.HttpSolrClient] 1.0
+[DEBUG][2018-10-16 16:18:03,545][org.apache.http.headers]>> Host: localhost:8983
+[DEBUG][2018-10-16 16:18:03,546][org.apache.http.headers]>> Connection: Keep-Alive
+[DEBUG][2018-10-16 16:18:03,685][org.apache.http.wire] << "HTTP/1.1 200 OK[\r][\n]"
+[DEBUG][2018-10-16 16:18:03,690][org.apache.http.wire] << "Content-Type: application/octet-stream[\r][\n]"
+[DEBUG][2018-10-16 16:18:03,691][org.apache.http.wire] << "Content-Length: 381[\r][\n]"
+[DEBUG][2018-10-16 16:18:03,691][org.apache.http.wire] << "[\r][\n]"
+[DEBUG][2018-10-16 16:18:03,694][org.apache.http.impl.conn.DefaultClientConnection]Receiving response: HTTP/1.1 200 OK
+[DEBUG][2018-10-16 16:18:03,694][org.apache.http.headers]<< HTTP/1.1 200 OK
+[DEBUG][2018-10-16 16:18:03,695][org.apache.http.headers]<< Content-Type: application/octet-stream
+[DEBUG][2018-10-16 16:18:03,695][org.apache.http.headers]<< Content-Length: 381
+[DEBUG][2018-10-16 16:18:03,699][org.apache.http.impl.client.SystemDefaultHttpClient]Connection can be kept alive indefinitely
+[DEBUG][2018-10-16 16:18:03,738][org.apache.http.wire] << "[0x2][0xa3][0xe0].responseHeader[0xa3][0xe0]&status[0x6][0x0][0x0][0x0][0x0][0xe0]%QTime][0x6][0xe0]&params[0xaa][0xe0]!q#*:*[0xe0]"df [0xe0]"hl$true[0xe0].hl.simple.post%</em>[0xe0]%start!1[0xe0]$sort'id desc[0xe0]$rows!5[0xe0]"wt'javabin[0xe0]'version!2[0xe0]-hl.simple.pre$<em>[0xe0](response[0xc][0x83]r[0x1]a[0x0][0x85][0xb][0xa3][0xe0]$name&[0xe9][0xa9][0xac][0xe6][0xa1][0xb6][0xe0]"id"82[0xe0])_version_[0x7][0x16]grx[0x8a] [0x0][0x0][0xb][0xa3][0xf0]&[0xe6][0xb2][0x99][0xe5][0x8f][0x91][0xf1]"81[0xf2][0x7][0x16]grx[0x8a][0x10][0x0][0x0][0xb][0xa3][0xf0],[0xe7][0x94][0xb5][0xe7][0x83][0xad][0xe6][0xb0][0xb4][0xe5][0x99][0xa8][0xf1]"80[0xf2][0x7][0x16]grx[0x8a][0x0][0x0][0x1][0xb][0xa3][0xf0])[0xe5][0xb9][0xb3][0xe8][0xa1][0xa1][0xe8][0xbd][0xa6][0xf1]"79[0xf2][0x7][0x16]grx[0x8a][0x0][0x0][0x0][0xb][0xa3][0xf0]0[0xe6][0x89][0xab][0xe5][0x9c][0xb0][0xe6][0x9c][0xba][0xe5][0x99][0xa8][0xe4][0xba][0xba] [0xf1]"78[0xf2][0x7][0x16]grx[0x89][0xd0][0x0][0x1][0xe0],highlighting[0xa5][0xe0]"82[0xa0][0xe0]"81[0xa0][0xe0]"80[0xa0][0xe0]"79[0xa0][0xe0]"78[0xa0]"
+[DEBUG][2018-10-16 16:18:03,743][org.apache.http.impl.conn.PoolingClientConnectionManager]Connection [id: 0][route: {}->http://localhost:8983] can be kept alive indefinitely
+[DEBUG][2018-10-16 16:18:03,743][org.apache.http.impl.conn.PoolingClientConnectionManager]Connection released: [id: 0][route: {}->http://localhost:8983][total kept alive: 1; route allocated: 1 of 32; total allocated: 1 of 128]
+[DEBUG][2018-10-19 09:33:20,508][org.apache.solr.client.solrj.impl.HttpClientUtil]Creating new http client, config:maxConnections=128&maxConnectionsPerHost=32&followRedirects=false
+[DEBUG][2018-10-19 09:33:21,587][org.apache.http.impl.conn.PoolingClientConnectionManager]Connection request: [route: {}->http://localhost:8983][total kept alive: 0; route allocated: 0 of 32; total allocated: 0 of 128]
+[DEBUG][2018-10-19 09:33:21,617][org.apache.http.impl.conn.PoolingClientConnectionManager]Connection leased: [id: 0][route: {}->http://localhost:8983][total kept alive: 0; route allocated: 1 of 32; total allocated: 1 of 128]
+[DEBUG][2018-10-19 09:33:21,625][org.apache.http.impl.conn.DefaultClientConnectionOperator]Connecting to localhost:8983
+[DEBUG][2018-10-19 09:33:21,681][org.apache.http.client.protocol.RequestAddCookies]CookieSpec selected: default
+[DEBUG][2018-10-19 09:33:21,683][org.apache.http.client.protocol.RequestAuthCache]Auth cache not set in the context
+[DEBUG][2018-10-19 09:33:21,685][org.apache.http.client.protocol.RequestTargetAuthentication]Target auth state: UNCHALLENGED
+[DEBUG][2018-10-19 09:33:21,686][org.apache.http.client.protocol.RequestProxyAuthentication]Proxy auth state: UNCHALLENGED
+[DEBUG][2018-10-19 09:33:21,688][org.apache.http.impl.client.SystemDefaultHttpClient]Attempt 1 to execute request
+[DEBUG][2018-10-19 09:33:21,688][org.apache.http.impl.conn.DefaultClientConnection]Sending request: GET /solr/test/select?q=*%3A*&wt=javabin&version=2 HTTP/1.1
+[DEBUG][2018-10-19 09:33:21,690][org.apache.http.wire] >> "GET /solr/test/select?q=*%3A*&wt=javabin&version=2 HTTP/1.1[\r][\n]"
+[DEBUG][2018-10-19 09:33:21,692][org.apache.http.wire] >> "User-Agent: Solr[org.apache.solr.client.solrj.impl.HttpSolrClient] 1.0[\r][\n]"
+[DEBUG][2018-10-19 09:33:21,692][org.apache.http.wire] >> "Host: localhost:8983[\r][\n]"
+[DEBUG][2018-10-19 09:33:21,693][org.apache.http.wire] >> "Connection: Keep-Alive[\r][\n]"
+[DEBUG][2018-10-19 09:33:21,694][org.apache.http.wire] >> "[\r][\n]"
+[DEBUG][2018-10-19 09:33:21,694][org.apache.http.headers]>> GET /solr/test/select?q=*%3A*&wt=javabin&version=2 HTTP/1.1
+[DEBUG][2018-10-19 09:33:21,696][org.apache.http.headers]>> User-Agent: Solr[org.apache.solr.client.solrj.impl.HttpSolrClient] 1.0
+[DEBUG][2018-10-19 09:33:21,696][org.apache.http.headers]>> Host: localhost:8983
+[DEBUG][2018-10-19 09:33:21,697][org.apache.http.headers]>> Connection: Keep-Alive
+[DEBUG][2018-10-19 09:33:21,702][org.apache.http.wire] << "HTTP/1.1 200 OK[\r][\n]"
+[DEBUG][2018-10-19 09:33:21,704][org.apache.http.wire] << "Content-Type: application/octet-stream[\r][\n]"
+[DEBUG][2018-10-19 09:33:21,705][org.apache.http.wire] << "Content-Length: 1054[\r][\n]"
+[DEBUG][2018-10-19 09:33:21,706][org.apache.http.wire] << "[\r][\n]"
+[DEBUG][2018-10-19 09:33:21,708][org.apache.http.impl.conn.DefaultClientConnection]Receiving response: HTTP/1.1 200 OK
+[DEBUG][2018-10-19 09:33:21,708][org.apache.http.headers]<< HTTP/1.1 200 OK
+[DEBUG][2018-10-19 09:33:21,709][org.apache.http.headers]<< Content-Type: application/octet-stream
+[DEBUG][2018-10-19 09:33:21,710][org.apache.http.headers]<< Content-Length: 1054
+[DEBUG][2018-10-19 09:33:21,717][org.apache.http.impl.client.SystemDefaultHttpClient]Connection can be kept alive indefinitely
+[DEBUG][2018-10-19 09:33:21,739][org.apache.http.wire] << "[0x2][0xa2][0xe0].responseHeader[0xa3][0xe0]&status[0x6][0x0][0x0][0x0][0x0][0xe0]%QTime[0x6][0x0][0x0][0x0][0x0][0xe0]&params[0xa3][0xe0]!q#*:*[0xe0]"wt'javabin[0xe0]'version!2[0xe0](response[0xc][0x83]w[0x6]`[0x0][0x8a][0xb][0xa3][0xe0]"id!1[0xe0]$name6sansung[0xe7][0x88][0x86][0xe7][0x82][0xb8][0xe7][0x89][0x8c][0xe6][0x89][0x8b][0xe6][0x9c][0xba][0xe0])_version_[0x7][0x16]gx[0xf2]*0[0x0][0x0][0xb][0xa3][0xea]?1Konka/[0xe5][0xba][0xb7][0xe4][0xbd][0xb3] LED32S1[0xe5][0x8d][0xa7][0xe5][0xae][0xa4]32[0xe5][0x90][0x8b][0xe5][0xae][0x89][0xe5][0x8d][0x93][0xe6][0x99][0xba][0xe8][0x83][0xbd][0xe6][0x97][0xa0][0xe7][0xba][0xbf]WIFI[0xe7][0xbd][0x91][0xe7][0xbb][0x9c][0xe6][0xb6][0xb2][0xe6][0x99][0xb6][0xe5][0xb9][0xb3][0xe6][0x9d][0xbf][0xe7][0x94][0xb5][0xe8][0xa7][0x86][0xe6][0x9c][0xba][0xe9]"87[0xeb][0x7][0x16]h[0x10][0x2]b [0x0][0x0][0xb][0xa3][0xea]?-Hisense/[0xe6][0xb5][0xb7][0xe4][0xbf][0xa1] LED49EC320A 49[0xe5][0x90][0x8b]led[0xe6][0xb6][0xb2][0xe6][0x99][0xb6][0xe7][0x94][0xb5][0xe8][0xa7][0x86][0xe6][0x9c][0xba][0xe6][0x99][0xba][0xe8][0x83][0xbd][0xe7][0xbd][0x91][0xe7][0xbb][0x9c][0xe5][0xb9][0xb3][0xe6][0x9d][0xbf][0xe7][0x94][0xb5][0xe8][0xa7][0x86]50[0xe9]"88[0xeb][0x7][0x16]h[0x10][0x2]bP[0x0][0x0][0xb][0xa3][0xea]?,Hisense/[0xe6][0xb5][0xb7][0xe4][0xbf][0xa1] LED40EC520UA 40[0xe8][0x8b][0xb1][0xe5][0xaf][0xb8]4K[0xe6][0x99][0xba][0xe8][0x83][0xbd][0xe5][0xb9][0xb3][0xe6][0x9d][0xbf][0xe6][0xb6][0xb2][0xe6][0x99][0xb6][0xe7][0x94][0xb5][0xe8][0xa7][0x86][0xe6][0x9c][0xba]WIFI[0xe7][0xbd][0x91][0xe7][0xbb][0x9c][0xe9]"89[0xeb][0x7][0x16]h[0x10][0x2]b`[0x0][0x0][0xb][0xa3][0xea]?/Changhong/[0xe9][0x95][0xbf][0xe8][0x99][0xb9] 65S1[0xe5][0xae][0x89][0xe5][0x8d][0x93][0xe6][0x99][0xba][0xe8][0x83][0xbd]12[0xe6][0xa0][0xb8]65[0xe8][0x8b][0xb1][0xe5][0xaf][0xb8][0xe7][0xbd][0x91][0xe7][0xbb][0x9c][0xe5][0xb9][0xb3][0xe6][0x9d][0xbf]LED[0xe6][0xb6][0xb2][0xe6][0x99][0xb6][0xe7][0x94][0xb5][0xe8][0xa7][0x86][0xe6][0x9c][0xba]70[0xe9]"90[0xeb][0x7][0x16]h[0x10][0x2]bp[0x0][0x0][0xb][0xa3][0xea]?,[0xe5][0xa4][0x8f][0xe6][0x99][0xae][0xe5][0xb1][0x8f]PANDA/[0xe7][0x86][0x8a][0xe7][0x8c][0xab] LE39D71S 39[0xe8][0x8b][0xb1][0xe5][0xaf][0xb8][0xe6][0x99][0xba][0xe8][0x83][0xbd]WiFi[0xe6][0xb6][0xb2][0xe6][0x99][0xb6][0xe5][0xb9][0xb3][0xe6][0x9d][0xbf][0xe7][0x94][0xb5][0xe8][0xa7][0x86]40 42 43[0xe9]"91[0xeb][0x7][0x16]h[0x10][0x2]bp[0x0][0x1][0xb][0xa3][0xea]?5[0xe4][0xb9][0x90][0xe6][0xb4][0x81][0xe5][0xa3][0xab][0xe6][0x99][0xba][0xe8][0x83][0xbd][0xe9][0xa9][0xac][0xe6][0xa1][0xb6][0xe9][0xab][0x98][0xe5][0x93][0x81][0xe8][0xb4][0xa8][0xe5][0x85][0xa8][0xe8][0x87][0xaa][0xe5][0x8a][0xa8][0xe9][0x81][0xa5][0xe6][0x8e][0xa7][0xe6][0x84][0x9f][0xe5][0xba][0x94][0xe4][0xb8][0x80][0xe4][0xbd][0x93][0xe5][0xbc][0x8f][0xe6][0x99][0xba][0xe8][0x83][0xbd][0xe5][0x9d][0x90][0xe4][0xbe][0xbf][0xe5][0x99][0xa8][0xe5][0xba][0xa7][0xe4][0xbe][0xbf][0xe5][0x99][0xa8][0xe9]#147[0xeb][0x7][0x16]h[0x10][0x2]b[0x80][0x0][0x0][0xb][0xa3][0xea]?3[0xe7][0xae][0xad][0xe7][0x89][0x8c][0xe9][0xa9][0xac][0xe6][0xa1][0xb6]/ARROW AB1118[0xe8][0x84][0xb2][0xe9][0x86][0x9b][0xe7][0x9b][0x96][0xe6][0x9d][0xbf][0xe8][0xbf][0x9e][0xe4][0xbd][0x93][0xe5][0x96][0xb7][0xe5][0xb0][0x84][0xe8][0x99][0xb9][0xe5][0x90][0xb8][0xe5][0xbc][0x8f][0xe5][0x9d][0x90][0xe4][0xbe][0xbf][0xe5][0x99][0xa8][0xe5][0xba][0xa7][0xe4][0xbe][0xbf][0xe5][0x99][0xa8][0xe6][0xad][0xa3][0xe5][0x93][0x81][0xe9]#148[0xeb][0x7][0x16]h[0x10][0x2]b[0x80][0x0][0x1][0xb][0xa3][0xea]?6[0xe7][0xba][0xb3][0xe8][0x92][0x82][0xe5][0x85][0xb0][0xe5][0x8d][0xa1]1066[0xe5][0x8d][0xab][0xe6][0xb5][0xb4][0xe6][0xbc][0xa9][0xe5][0x86][0xb2][0xe8][0x99][0xb9][0xe5][0x90][0xb8][0xe5][0xbc][0x8f][0xe9][0xa9][0xac][0xe6][0xa1][0xb6]350[0xe5][0x9d][0x91][0xe8][0xb7][0x9d][0xe5][0x9d][0x90][0xe4][0xbe][0xbf][0xe5][0x99][0xa8][0xe5][0x8f][0xaf][0xe9][0x85][0x8d][0xe6][0x99][0xba][0xe8][0x83][0xbd][0xe7][0x9b][0x96][0xe5][0xba][0xa7][0xe4][0xbe][0xbf][0xe5][0x99][0xa8][0xe9]#149[0xeb][0x7][0x16]h[0x10][0x2]b[0x90][0x0][0x0][0xb][0xa3][0xea]?8[0xe5][0xbe][0xb7][0xe5][0x9b][0xbd]DGPOSY[0xe8][0xb6][0x85][0xe6][0xbc][0xa9][0xe5][0xbc][0x8f][0xe5][0xbd][0xa9][0xe8][0x89][0xb2][0xe9][0xa9][0xac][0xe6][0xa1][0xb6][0xe7][0xbc][0x93][0xe9][0x99][0x8d][0xe5][0x9d][0x90][0xe4][0xbe][0xbf][0xe5][0x99][0xa8][0xe9][0x9d][0x99][0xe9][0x9f][0xb3][0xe8][0x8a][0x82][0xe6][0xb0][0xb4][0xe6][0x8a][0xbd][0xe6][0xb0][0xb4][0xe9][0xa9][0xac][0xe6][0xa1][0xb6][0xe8][0xbf][0x9e][0xe4][0xbd][0x93][0xe5][0xba][0xa7][0xe4][0xbe][0xbf][0xe5][0x99][0xa8][0xe9]#150[0xeb][0x7][0x16]h[0x10][0x2]c[0x0][0x0][0x0]"
+[DEBUG][2018-10-19 09:33:21,743][org.apache.http.impl.conn.PoolingClientConnectionManager]Connection [id: 0][route: {}->http://localhost:8983] can be kept alive indefinitely
+[DEBUG][2018-10-19 09:33:21,743][org.apache.http.impl.conn.PoolingClientConnectionManager]Connection released: [id: 0][route: {}->http://localhost:8983][total kept alive: 1; route allocated: 1 of 32; total allocated: 1 of 128]
+[DEBUG][2018-10-19 09:59:28,403][org.apache.solr.client.solrj.impl.HttpClientUtil]Creating new http client, config:maxConnections=128&maxConnectionsPerHost=32&followRedirects=false
+[DEBUG][2018-10-19 09:59:28,968][org.apache.http.impl.conn.PoolingClientConnectionManager]Connection request: [route: {}->http://localhost:8983][total kept alive: 0; route allocated: 0 of 32; total allocated: 0 of 128]
+[DEBUG][2018-10-19 09:59:29,006][org.apache.http.impl.conn.PoolingClientConnectionManager]Connection leased: [id: 0][route: {}->http://localhost:8983][total kept alive: 0; route allocated: 1 of 32; total allocated: 1 of 128]
+[DEBUG][2018-10-19 09:59:29,011][org.apache.http.impl.conn.DefaultClientConnectionOperator]Connecting to localhost:8983
+[DEBUG][2018-10-19 09:59:29,050][org.apache.http.client.protocol.RequestAddCookies]CookieSpec selected: default
+[DEBUG][2018-10-19 09:59:29,053][org.apache.http.client.protocol.RequestAuthCache]Auth cache not set in the context
+[DEBUG][2018-10-19 09:59:29,055][org.apache.http.client.protocol.RequestTargetAuthentication]Target auth state: UNCHALLENGED
+[DEBUG][2018-10-19 09:59:29,056][org.apache.http.client.protocol.RequestProxyAuthentication]Proxy auth state: UNCHALLENGED
+[DEBUG][2018-10-19 09:59:29,057][org.apache.http.impl.client.SystemDefaultHttpClient]Attempt 1 to execute request
+[DEBUG][2018-10-19 09:59:29,058][org.apache.http.impl.conn.DefaultClientConnection]Sending request: GET /solr/test/select?q=*%3A*&fl=*%2Cscore&wt=javabin&version=2 HTTP/1.1
+[DEBUG][2018-10-19 09:59:29,060][org.apache.http.wire] >> "GET /solr/test/select?q=*%3A*&fl=*%2Cscore&wt=javabin&version=2 HTTP/1.1[\r][\n]"
+[DEBUG][2018-10-19 09:59:29,071][org.apache.http.wire] >> "User-Agent: Solr[org.apache.solr.client.solrj.impl.HttpSolrClient] 1.0[\r][\n]"
+[DEBUG][2018-10-19 09:59:29,076][org.apache.http.wire] >> "Host: localhost:8983[\r][\n]"
+[DEBUG][2018-10-19 09:59:29,077][org.apache.http.wire] >> "Connection: Keep-Alive[\r][\n]"
+[DEBUG][2018-10-19 09:59:29,078][org.apache.http.wire] >> "[\r][\n]"
+[DEBUG][2018-10-19 09:59:29,079][org.apache.http.headers]>> GET /solr/test/select?q=*%3A*&fl=*%2Cscore&wt=javabin&version=2 HTTP/1.1
+[DEBUG][2018-10-19 09:59:29,081][org.apache.http.headers]>> User-Agent: Solr[org.apache.solr.client.solrj.impl.HttpSolrClient] 1.0
+[DEBUG][2018-10-19 09:59:29,081][org.apache.http.headers]>> Host: localhost:8983
+[DEBUG][2018-10-19 09:59:29,082][org.apache.http.headers]>> Connection: Keep-Alive
+[DEBUG][2018-10-19 09:59:29,088][org.apache.http.wire] << "HTTP/1.1 200 OK[\r][\n]"
+[DEBUG][2018-10-19 09:59:29,094][org.apache.http.wire] << "Content-Type: application/octet-stream[\r][\n]"
+[DEBUG][2018-10-19 09:59:29,099][org.apache.http.wire] << "Content-Length: 1132[\r][\n]"
+[DEBUG][2018-10-19 09:59:29,100][org.apache.http.wire] << "[\r][\n]"
+[DEBUG][2018-10-19 09:59:29,105][org.apache.http.impl.conn.DefaultClientConnection]Receiving response: HTTP/1.1 200 OK
+[DEBUG][2018-10-19 09:59:29,106][org.apache.http.headers]<< HTTP/1.1 200 OK
+[DEBUG][2018-10-19 09:59:29,106][org.apache.http.headers]<< Content-Type: application/octet-stream
+[DEBUG][2018-10-19 09:59:29,106][org.apache.http.headers]<< Content-Length: 1132
+[DEBUG][2018-10-19 09:59:29,115][org.apache.http.impl.client.SystemDefaultHttpClient]Connection can be kept alive indefinitely
+[DEBUG][2018-10-19 09:59:29,153][org.apache.http.wire] << "[0x2][0xa2][0xe0].responseHeader[0xa3][0xe0]&status[0x6][0x0][0x0][0x0][0x0][0xe0]%QTimeB[0xe0]&params[0xa4][0xe0]!q#*:*[0xe0]"fl'*,score[0xe0]"wt'javabin[0xe0]'version!2[0xe0](response[0xc][0x83]w[0x6]`[0x8]?[0x80][0x0][0x0][0x8a][0xb][0xa4][0xe0]"id!1[0xe0]$name6sansung[0xe7][0x88][0x86][0xe7][0x82][0xb8][0xe7][0x89][0x8c][0xe6][0x89][0x8b][0xe6][0x9c][0xba][0xe0])_version_[0x7][0x16]gx[0xf2]*0[0x0][0x0][0xe0]%score[0x8]?[0x80][0x0][0x0][0xb][0xa4][0xeb]?1Konka/[0xe5][0xba][0xb7][0xe4][0xbd][0xb3] LED32S1[0xe5][0x8d][0xa7][0xe5][0xae][0xa4]32[0xe5][0x90][0x8b][0xe5][0xae][0x89][0xe5][0x8d][0x93][0xe6][0x99][0xba][0xe8][0x83][0xbd][0xe6][0x97][0xa0][0xe7][0xba][0xbf]WIFI[0xe7][0xbd][0x91][0xe7][0xbb][0x9c][0xe6][0xb6][0xb2][0xe6][0x99][0xb6][0xe5][0xb9][0xb3][0xe6][0x9d][0xbf][0xe7][0x94][0xb5][0xe8][0xa7][0x86][0xe6][0x9c][0xba][0xea]"87[0xec][0x7][0x16]h[0x10][0x2]b [0x0][0x0][0xed][0x8]?[0x80][0x0][0x0][0xb][0xa4][0xeb]?-Hisense/[0xe6][0xb5][0xb7][0xe4][0xbf][0xa1] LED49EC320A 49[0xe5][0x90][0x8b]led[0xe6][0xb6][0xb2][0xe6][0x99][0xb6][0xe7][0x94][0xb5][0xe8][0xa7][0x86][0xe6][0x9c][0xba][0xe6][0x99][0xba][0xe8][0x83][0xbd][0xe7][0xbd][0x91][0xe7][0xbb][0x9c][0xe5][0xb9][0xb3][0xe6][0x9d][0xbf][0xe7][0x94][0xb5][0xe8][0xa7][0x86]50[0xea]"88[0xec][0x7][0x16]h[0x10][0x2]bP[0x0][0x0][0xed][0x8]?[0x80][0x0][0x0][0xb][0xa4][0xeb]?,Hisense/[0xe6][0xb5][0xb7][0xe4][0xbf][0xa1] LED40EC520UA 40[0xe8][0x8b][0xb1][0xe5][0xaf][0xb8]4K[0xe6][0x99][0xba][0xe8][0x83][0xbd][0xe5][0xb9][0xb3][0xe6][0x9d][0xbf][0xe6][0xb6][0xb2][0xe6][0x99][0xb6][0xe7][0x94][0xb5][0xe8][0xa7][0x86][0xe6][0x9c][0xba]WIFI[0xe7][0xbd][0x91][0xe7][0xbb][0x9c][0xea]"89[0xec][0x7][0x16]h[0x10][0x2]b`[0x0][0x0][0xed][0x8]?[0x80][0x0][0x0][0xb][0xa4][0xeb]?/Changhong/[0xe9][0x95][0xbf][0xe8][0x99][0xb9] 65S1[0xe5][0xae][0x89][0xe5][0x8d][0x93][0xe6][0x99][0xba][0xe8][0x83][0xbd]12[0xe6][0xa0][0xb8]65[0xe8][0x8b][0xb1][0xe5][0xaf][0xb8][0xe7][0xbd][0x91][0xe7][0xbb][0x9c][0xe5][0xb9][0xb3][0xe6][0x9d][0xbf]LED[0xe6][0xb6][0xb2][0xe6][0x99][0xb6][0xe7][0x94][0xb5][0xe8][0xa7][0x86][0xe6][0x9c][0xba]70[0xea]"90[0xec][0x7][0x16]h[0x10][0x2]bp[0x0][0x0][0xed][0x8]?[0x80][0x0][0x0][0xb][0xa4][0xeb]?,[0xe5][0xa4][0x8f][0xe6][0x99][0xae][0xe5][0xb1][0x8f]PANDA/[0xe7][0x86][0x8a][0xe7][0x8c][0xab] LE39D71S 39[0xe8][0x8b][0xb1][0xe5][0xaf][0xb8][0xe6][0x99][0xba][0xe8][0x83][0xbd]WiFi[0xe6][0xb6][0xb2][0xe6][0x99][0xb6][0xe5][0xb9][0xb3][0xe6][0x9d][0xbf][0xe7][0x94][0xb5][0xe8][0xa7][0x86]40 42 43[0xea]"91[0xec][0x7][0x16]h[0x10][0x2]bp[0x0][0x1][0xed][0x8]?[0x80][0x0][0x0][0xb][0xa4][0xeb]?5[0xe4][0xb9][0x90][0xe6][0xb4][0x81][0xe5][0xa3][0xab][0xe6][0x99][0xba][0xe8][0x83][0xbd][0xe9][0xa9][0xac][0xe6][0xa1][0xb6][0xe9][0xab][0x98][0xe5][0x93][0x81][0xe8][0xb4][0xa8][0xe5][0x85][0xa8][0xe8][0x87][0xaa][0xe5][0x8a][0xa8][0xe9][0x81][0xa5][0xe6][0x8e][0xa7][0xe6][0x84][0x9f][0xe5][0xba][0x94][0xe4][0xb8][0x80][0xe4][0xbd][0x93][0xe5][0xbc][0x8f][0xe6][0x99][0xba][0xe8][0x83][0xbd][0xe5][0x9d][0x90][0xe4][0xbe][0xbf][0xe5][0x99][0xa8][0xe5][0xba][0xa7][0xe4][0xbe][0xbf][0xe5][0x99][0xa8][0xea]#147[0xec][0x7][0x16]h[0x10][0x2]b[0x80][0x0][0x0][0xed][0x8]?[0x80][0x0][0x0][0xb][0xa4][0xeb]?3[0xe7][0xae][0xad][0xe7][0x89][0x8c][0xe9][0xa9][0xac][0xe6][0xa1][0xb6]/ARROW AB1118[0xe8][0x84][0xb2][0xe9][0x86][0x9b][0xe7][0x9b][0x96][0xe6][0x9d][0xbf][0xe8][0xbf][0x9e][0xe4][0xbd][0x93][0xe5][0x96][0xb7][0xe5][0xb0][0x84][0xe8][0x99][0xb9][0xe5][0x90][0xb8][0xe5][0xbc][0x8f][0xe5][0x9d][0x90][0xe4][0xbe][0xbf][0xe5][0x99][0xa8][0xe5][0xba][0xa7][0xe4][0xbe][0xbf][0xe5][0x99][0xa8][0xe6][0xad][0xa3][0xe5][0x93][0x81][0xea]#148[0xec][0x7][0x16]h[0x10][0x2]b[0x80][0x0][0x1][0xed][0x8]?[0x80][0x0][0x0][0xb][0xa4][0xeb]?6[0xe7][0xba][0xb3][0xe8][0x92][0x82][0xe5][0x85][0xb0][0xe5][0x8d][0xa1]1066[0xe5][0x8d][0xab][0xe6][0xb5][0xb4][0xe6][0xbc][0xa9][0xe5][0x86][0xb2][0xe8][0x99][0xb9][0xe5][0x90][0xb8][0xe5][0xbc][0x8f][0xe9][0xa9][0xac][0xe6][0xa1][0xb6]350[0xe5][0x9d][0x91][0xe8][0xb7][0x9d][0xe5][0x9d][0x90][0xe4][0xbe][0xbf][0xe5][0x99][0xa8][0xe5][0x8f][0xaf][0xe9][0x85][0x8d][0xe6][0x99][0xba][0xe8][0x83][0xbd][0xe7][0x9b][0x96][0xe5][0xba][0xa7][0xe4][0xbe][0xbf][0xe5][0x99][0xa8][0xea]#149[0xec][0x7][0x16]h[0x10][0x2]b[0x90][0x0][0x0][0xed][0x8]?[0x80][0x0][0x0][0xb][0xa4][0xeb]?8[0xe5][0xbe][0xb7][0xe5][0x9b][0xbd]DGPOSY[0xe8][0xb6][0x85][0xe6][0xbc][0xa9][0xe5][0xbc][0x8f][0xe5][0xbd][0xa9][0xe8][0x89][0xb2][0xe9][0xa9][0xac][0xe6][0xa1][0xb6][0xe7][0xbc][0x93][0xe9][0x99][0x8d][0xe5][0x9d][0x90][0xe4][0xbe][0xbf][0xe5][0x99][0xa8][0xe9][0x9d][0x99][0xe9][0x9f][0xb3][0xe8][0x8a][0x82][0xe6][0xb0][0xb4][0xe6][0x8a][0xbd][0xe6][0xb0][0xb4][0xe9][0xa9][0xac][0xe6][0xa1][0xb6][0xe8][0xbf][0x9e][0xe4][0xbd][0x93][0xe5][0xba][0xa7][0xe4][0xbe][0xbf][0xe5][0x99][0xa8][0xea]#150[0xec][0x7][0x16]h[0x10][0x2]c[0x0][0x0][0x0][0xed][0x8]?[0x80][0x0][0x0]"
+[DEBUG][2018-10-19 09:59:29,156][org.apache.http.impl.conn.PoolingClientConnectionManager]Connection [id: 0][route: {}->http://localhost:8983] can be kept alive indefinitely
+[DEBUG][2018-10-19 09:59:29,156][org.apache.http.impl.conn.PoolingClientConnectionManager]Connection released: [id: 0][route: {}->http://localhost:8983][total kept alive: 1; route allocated: 1 of 32; total allocated: 1 of 128]
+[DEBUG][2018-10-19 10:01:01,223][org.apache.solr.client.solrj.impl.HttpClientUtil]Creating new http client, config:maxConnections=128&maxConnectionsPerHost=32&followRedirects=false
+[DEBUG][2018-10-19 10:01:01,698][org.apache.http.impl.conn.PoolingClientConnectionManager]Connection request: [route: {}->http://localhost:8983][total kept alive: 0; route allocated: 0 of 32; total allocated: 0 of 128]
+[DEBUG][2018-10-19 10:01:01,718][org.apache.http.impl.conn.PoolingClientConnectionManager]Connection leased: [id: 0][route: {}->http://localhost:8983][total kept alive: 0; route allocated: 1 of 32; total allocated: 1 of 128]
+[DEBUG][2018-10-19 10:01:01,722][org.apache.http.impl.conn.DefaultClientConnectionOperator]Connecting to localhost:8983
+[DEBUG][2018-10-19 10:01:01,766][org.apache.http.client.protocol.RequestAddCookies]CookieSpec selected: default
+[DEBUG][2018-10-19 10:01:01,768][org.apache.http.client.protocol.RequestAuthCache]Auth cache not set in the context
+[DEBUG][2018-10-19 10:01:01,768][org.apache.http.client.protocol.RequestTargetAuthentication]Target auth state: UNCHALLENGED
+[DEBUG][2018-10-19 10:01:01,770][org.apache.http.client.protocol.RequestProxyAuthentication]Proxy auth state: UNCHALLENGED
+[DEBUG][2018-10-19 10:01:01,770][org.apache.http.impl.client.SystemDefaultHttpClient]Attempt 1 to execute request
+[DEBUG][2018-10-19 10:01:01,770][org.apache.http.impl.conn.DefaultClientConnection]Sending request: GET /solr/test/select?q=name%3A%E6%99%BA%E8%83%BD%2B%E7%94%B5%E8%A7%86&fl=*%2Cscore&wt=javabin&version=2 HTTP/1.1
+[DEBUG][2018-10-19 10:01:01,773][org.apache.http.wire] >> "GET /solr/test/select?q=name%3A%E6%99%BA%E8%83%BD%2B%E7%94%B5%E8%A7%86&fl=*%2Cscore&wt=javabin&version=2 HTTP/1.1[\r][\n]"
+[DEBUG][2018-10-19 10:01:01,776][org.apache.http.wire] >> "User-Agent: Solr[org.apache.solr.client.solrj.impl.HttpSolrClient] 1.0[\r][\n]"
+[DEBUG][2018-10-19 10:01:01,777][org.apache.http.wire] >> "Host: localhost:8983[\r][\n]"
+[DEBUG][2018-10-19 10:01:01,778][org.apache.http.wire] >> "Connection: Keep-Alive[\r][\n]"
+[DEBUG][2018-10-19 10:01:01,779][org.apache.http.wire] >> "[\r][\n]"
+[DEBUG][2018-10-19 10:01:01,779][org.apache.http.headers]>> GET /solr/test/select?q=name%3A%E6%99%BA%E8%83%BD%2B%E7%94%B5%E8%A7%86&fl=*%2Cscore&wt=javabin&version=2 HTTP/1.1
+[DEBUG][2018-10-19 10:01:01,781][org.apache.http.headers]>> User-Agent: Solr[org.apache.solr.client.solrj.impl.HttpSolrClient] 1.0
+[DEBUG][2018-10-19 10:01:01,781][org.apache.http.headers]>> Host: localhost:8983
+[DEBUG][2018-10-19 10:01:01,782][org.apache.http.headers]>> Connection: Keep-Alive
+[DEBUG][2018-10-19 10:01:01,832][org.apache.http.wire] << "HTTP/1.1 200 OK[\r][\n]"
+[DEBUG][2018-10-19 10:01:01,843][org.apache.http.wire] << "Content-Type: application/octet-stream[\r][\n]"
+[DEBUG][2018-10-19 10:01:01,845][org.apache.http.wire] << "Content-Length: 1117[\r][\n]"
+[DEBUG][2018-10-19 10:01:01,845][org.apache.http.wire] << "[\r][\n]"
+[DEBUG][2018-10-19 10:01:01,848][org.apache.http.impl.conn.DefaultClientConnection]Receiving response: HTTP/1.1 200 OK
+[DEBUG][2018-10-19 10:01:01,848][org.apache.http.headers]<< HTTP/1.1 200 OK
+[DEBUG][2018-10-19 10:01:01,848][org.apache.http.headers]<< Content-Type: application/octet-stream
+[DEBUG][2018-10-19 10:01:01,855][org.apache.http.headers]<< Content-Length: 1117
+[DEBUG][2018-10-19 10:01:01,867][org.apache.http.impl.client.SystemDefaultHttpClient]Connection can be kept alive indefinitely
+[DEBUG][2018-10-19 10:01:01,900][org.apache.http.wire] << "[0x2][0xa2][0xe0].responseHeader[0xa3][0xe0]&status[0x6][0x0][0x0][0x0][0x0][0xe0]%QTime^[0x2][0xe0]&params[0xa4][0xe0]!q2name:[0xe6][0x99][0xba][0xe8][0x83][0xbd]+[0xe7][0x94][0xb5][0xe8][0xa7][0x86][0xe0]"fl'*,score[0xe0]"wt'javabin[0xe0]'version!2[0xe0](response[0xc][0x83]v[0x1]`[0x8]@[0xa1][0xd6]N[0x8a][0xb][0xa4][0xe0]$name?-Hisense/[0xe6][0xb5][0xb7][0xe4][0xbf][0xa1] LED49EC320A 49[0xe5][0x90][0x8b]led[0xe6][0xb6][0xb2][0xe6][0x99][0xb6][0xe7][0x94][0xb5][0xe8][0xa7][0x86][0xe6][0x9c][0xba][0xe6][0x99][0xba][0xe8][0x83][0xbd][0xe7][0xbd][0x91][0xe7][0xbb][0x9c][0xe5][0xb9][0xb3][0xe6][0x9d][0xbf][0xe7][0x94][0xb5][0xe8][0xa7][0x86]50[0xe0]"id"88[0xe0])_version_[0x7][0x16]h[0x10][0x2]bP[0x0][0x0][0xe0]%score[0x8]@[0xa1][0xd6]N[0xb][0xa4][0xea],[0xe5][0xb9][0xb3][0xe6][0x9d][0xbf][0xe7][0x94][0xb5][0xe8][0xa7][0x86][0xeb]"83[0xec][0x7][0x16]h[0x10]L[0xf][0x80][0x0][0x0][0xed][0x8]@[0x86][0xcc][0xac][0xb][0xa4][0xea]?1Konka/[0xe5][0xba][0xb7][0xe4][0xbd][0xb3] LED32S1[0xe5][0x8d][0xa7][0xe5][0xae][0xa4]32[0xe5][0x90][0x8b][0xe5][0xae][0x89][0xe5][0x8d][0x93][0xe6][0x99][0xba][0xe8][0x83][0xbd][0xe6][0x97][0xa0][0xe7][0xba][0xbf]WIFI[0xe7][0xbd][0x91][0xe7][0xbb][0x9c][0xe6][0xb6][0xb2][0xe6][0x99][0xb6][0xe5][0xb9][0xb3][0xe6][0x9d][0xbf][0xe7][0x94][0xb5][0xe8][0xa7][0x86][0xe6][0x9c][0xba][0xeb]"87[0xec][0x7][0x16]h[0x10][0x2]b [0x0][0x0][0xed][0x8]@[0x80]Y[0xea][0xb][0xa4][0xea]?,[0xe5][0xa4][0x8f][0xe6][0x99][0xae][0xe5][0xb1][0x8f]PANDA/[0xe7][0x86][0x8a][0xe7][0x8c][0xab] LE39D71S 39[0xe8][0x8b][0xb1][0xe5][0xaf][0xb8][0xe6][0x99][0xba][0xe8][0x83][0xbd]WiFi[0xe6][0xb6][0xb2][0xe6][0x99][0xb6][0xe5][0xb9][0xb3][0xe6][0x9d][0xbf][0xe7][0x94][0xb5][0xe8][0xa7][0x86]40 42 43[0xeb]"91[0xec][0x7][0x16]h[0x10][0x2]bp[0x0][0x1][0xed][0x8]@[0x80]Y[0xea][0xb][0xa4][0xea]?,Hisense/[0xe6][0xb5][0xb7][0xe4][0xbf][0xa1] LED40EC520UA 40[0xe8][0x8b][0xb1][0xe5][0xaf][0xb8]4K[0xe6][0x99][0xba][0xe8][0x83][0xbd][0xe5][0xb9][0xb3][0xe6][0x9d][0xbf][0xe6][0xb6][0xb2][0xe6][0x99][0xb6][0xe7][0x94][0xb5][0xe8][0xa7][0x86][0xe6][0x9c][0xba]WIFI[0xe7][0xbd][0x91][0xe7][0xbb][0x9c][0xeb]"89[0xec][0x7][0x16]h[0x10][0x2]b`[0x0][0x0][0xed][0x8]@{[0x80]4[0xb][0xa4][0xea]?/Changhong/[0xe9][0x95][0xbf][0xe8][0x99][0xb9] 65S1[0xe5][0xae][0x89][0xe5][0x8d][0x93][0xe6][0x99][0xba][0xe8][0x83][0xbd]12[0xe6][0xa0][0xb8]65[0xe8][0x8b][0xb1][0xe5][0xaf][0xb8][0xe7][0xbd][0x91][0xe7][0xbb][0x9c][0xe5][0xb9][0xb3][0xe6][0x9d][0xbf]LED[0xe6][0xb6][0xb2][0xe6][0x99][0xb6][0xe7][0x94][0xb5][0xe8][0xa7][0x86][0xe6][0x9c][0xba]70[0xeb]"90[0xec][0x7][0x16]h[0x10][0x2]bp[0x0][0x0][0xed][0x8]@{[0x80]4[0xb][0xa4][0xea]?5[0xe4][0xb9][0x90][0xe6][0xb4][0x81][0xe5][0xa3][0xab][0xe6][0x99][0xba][0xe8][0x83][0xbd][0xe9][0xa9][0xac][0xe6][0xa1][0xb6][0xe9][0xab][0x98][0xe5][0x93][0x81][0xe8][0xb4][0xa8][0xe5][0x85][0xa8][0xe8][0x87][0xaa][0xe5][0x8a][0xa8][0xe9][0x81][0xa5][0xe6][0x8e][0xa7][0xe6][0x84][0x9f][0xe5][0xba][0x94][0xe4][0xb8][0x80][0xe4][0xbd][0x93][0xe5][0xbc][0x8f][0xe6][0x99][0xba][0xe8][0x83][0xbd][0xe5][0x9d][0x90][0xe4][0xbe][0xbf][0xe5][0x99][0xa8][0xe5][0xba][0xa7][0xe4][0xbe][0xbf][0xe5][0x99][0xa8][0xeb]#147[0xec][0x7][0x16]h[0x10][0x2]b[0x80][0x0][0x0][0xed][0x8]@[0xb]= [0xb][0xa4][0xea]?/MeiLing/[0xe7][0xbe][0x8e][0xe8][0x8f][0xb1] BCD-560WUCX[0xe5][0xaf][0xb9][0xe5][0xbc][0x80][0xe9][0x97][0xa8][0xe7][0x94][0xb5][0xe5][0x86][0xb0][0xe7][0xae][0xb1][0xe5][0xae][0xb6][0xe7][0x94][0xa8][0xe5][0x86][0xb0][0xe7][0xae][0xb1]WIFI[0xe6][0x99][0xba][0xe8][0x83][0xbd][0xe9][0xa3][0x8e][0xe5][0x86][0xb7][0xe6][0x97][0xa0][0xe9][0x9c][0x9c][0xeb]#449[0xec][0x7][0x16]h[0x10][0x2]c[0xe0][0x0][0x0][0xed][0x8]?[0xd4]t[0xcc][0xb][0xa4][0xea]?.FRESTECH/[0xe6][0x96][0xb0][0xe9][0xa3][0x9e] BCD-286WDKSM[0xe9][0x98][0xbf][0xe9][0x87][0x8c][0xe4][0xba][0x91][0xe6][0x99][0xba][0xe8][0x83][0xbd]wifi[0xe9][0xa3][0x8e][0xe5][0x86][0xb7][0xe6][0x97][0xa0][0xe9][0x9c][0x9c][0xe6][0x99][0xba][0xe6][0x8e][0xa7][0xe4][0xb8][0xa4][0xe9][0x97][0xa8][0xe5][0x86][0xb0][0xe7][0xae][0xb1][0xeb]#450[0xec][0x7][0x16]h[0x10][0x2]c[0xe0][0x0][0x1][0xed][0x8]?[0xcf][0x8e],[0xb][0xa4][0xea]?.[0xe3][0x80][0x90][0xe9][0x98][0xbf][0xe9][0x87][0x8c][0xe6][0x99][0xba][0xe8][0x83][0xbd][0xe3][0x80][0x91]Galanz/[0xe6][0xa0][0xbc][0xe5][0x85][0xb0][0xe4][0xbb][0x95] BCD-251WTHG(T) [0xe4][0xb8][0x89][0xe9][0x97][0xa8][0xe7][0x94][0xb5][0xe5][0x86][0xb0][0xe7][0xae][0xb1]251[0xe5][0x8d][0x87][0xe9][0xa3][0x8e][0xe5][0x86][0xb7][0xeb]#452[0xec][0x7][0x16]h[0x10][0x2]c[0xf0][0x0][0x1][0xed][0x8]?[0xcf][0x8e],"
+[DEBUG][2018-10-19 10:01:01,903][org.apache.http.impl.conn.PoolingClientConnectionManager]Connection [id: 0][route: {}->http://localhost:8983] can be kept alive indefinitely
+[DEBUG][2018-10-19 10:01:01,904][org.apache.http.impl.conn.PoolingClientConnectionManager]Connection released: [id: 0][route: {}->http://localhost:8983][total kept alive: 1; route allocated: 1 of 32; total allocated: 1 of 128]
+[DEBUG][2018-10-19 10:02:48,703][org.apache.solr.client.solrj.impl.HttpClientUtil]Creating new http client, config:maxConnections=128&maxConnectionsPerHost=32&followRedirects=false
+[DEBUG][2018-10-19 10:02:49,199][org.apache.http.impl.conn.PoolingClientConnectionManager]Connection request: [route: {}->http://localhost:8983][total kept alive: 0; route allocated: 0 of 32; total allocated: 0 of 128]
+[DEBUG][2018-10-19 10:02:49,213][org.apache.http.impl.conn.PoolingClientConnectionManager]Connection leased: [id: 0][route: {}->http://localhost:8983][total kept alive: 0; route allocated: 1 of 32; total allocated: 1 of 128]
+[DEBUG][2018-10-19 10:02:49,217][org.apache.http.impl.conn.DefaultClientConnectionOperator]Connecting to localhost:8983
+[DEBUG][2018-10-19 10:02:49,243][org.apache.http.client.protocol.RequestAddCookies]CookieSpec selected: default
+[DEBUG][2018-10-19 10:02:49,247][org.apache.http.client.protocol.RequestAuthCache]Auth cache not set in the context
+[DEBUG][2018-10-19 10:02:49,249][org.apache.http.client.protocol.RequestTargetAuthentication]Target auth state: UNCHALLENGED
+[DEBUG][2018-10-19 10:02:49,250][org.apache.http.client.protocol.RequestProxyAuthentication]Proxy auth state: UNCHALLENGED
+[DEBUG][2018-10-19 10:02:49,251][org.apache.http.impl.client.SystemDefaultHttpClient]Attempt 1 to execute request
+[DEBUG][2018-10-19 10:02:49,251][org.apache.http.impl.conn.DefaultClientConnection]Sending request: GET /solr/test/select?q=name%3A%E6%99%BA%E8%83%BD%2B%E7%94%B5%E8%A7%86&fl=*%2Cscore&wt=javabin&version=2 HTTP/1.1
+[DEBUG][2018-10-19 10:02:49,253][org.apache.http.wire] >> "GET /solr/test/select?q=name%3A%E6%99%BA%E8%83%BD%2B%E7%94%B5%E8%A7%86&fl=*%2Cscore&wt=javabin&version=2 HTTP/1.1[\r][\n]"
+[DEBUG][2018-10-19 10:02:49,254][org.apache.http.wire] >> "User-Agent: Solr[org.apache.solr.client.solrj.impl.HttpSolrClient] 1.0[\r][\n]"
+[DEBUG][2018-10-19 10:02:49,255][org.apache.http.wire] >> "Host: localhost:8983[\r][\n]"
+[DEBUG][2018-10-19 10:02:49,258][org.apache.http.wire] >> "Connection: Keep-Alive[\r][\n]"
+[DEBUG][2018-10-19 10:02:49,259][org.apache.http.wire] >> "[\r][\n]"
+[DEBUG][2018-10-19 10:02:49,260][org.apache.http.headers]>> GET /solr/test/select?q=name%3A%E6%99%BA%E8%83%BD%2B%E7%94%B5%E8%A7%86&fl=*%2Cscore&wt=javabin&version=2 HTTP/1.1
+[DEBUG][2018-10-19 10:02:49,261][org.apache.http.headers]>> User-Agent: Solr[org.apache.solr.client.solrj.impl.HttpSolrClient] 1.0
+[DEBUG][2018-10-19 10:02:49,262][org.apache.http.headers]>> Host: localhost:8983
+[DEBUG][2018-10-19 10:02:49,263][org.apache.http.headers]>> Connection: Keep-Alive
+[DEBUG][2018-10-19 10:02:49,270][org.apache.http.wire] << "HTTP/1.1 200 OK[\r][\n]"
+[DEBUG][2018-10-19 10:02:49,274][org.apache.http.wire] << "Content-Type: application/octet-stream[\r][\n]"
+[DEBUG][2018-10-19 10:02:49,275][org.apache.http.wire] << "Content-Length: 1116[\r][\n]"
+[DEBUG][2018-10-19 10:02:49,276][org.apache.http.wire] << "[\r][\n]"
+[DEBUG][2018-10-19 10:02:49,277][org.apache.http.impl.conn.DefaultClientConnection]Receiving response: HTTP/1.1 200 OK
+[DEBUG][2018-10-19 10:02:49,277][org.apache.http.headers]<< HTTP/1.1 200 OK
+[DEBUG][2018-10-19 10:02:49,278][org.apache.http.headers]<< Content-Type: application/octet-stream
+[DEBUG][2018-10-19 10:02:49,281][org.apache.http.headers]<< Content-Length: 1116
+[DEBUG][2018-10-19 10:02:49,287][org.apache.http.impl.client.SystemDefaultHttpClient]Connection can be kept alive indefinitely
+[DEBUG][2018-10-19 10:02:49,329][org.apache.http.wire] << "[0x2][0xa2][0xe0].responseHeader[0xa3][0xe0]&status[0x6][0x0][0x0][0x0][0x0][0xe0]%QTimeC[0xe0]&params[0xa4][0xe0]!q2name:[0xe6][0x99][0xba][0xe8][0x83][0xbd]+[0xe7][0x94][0xb5][0xe8][0xa7][0x86][0xe0]"fl'*,score[0xe0]"wt'javabin[0xe0]'version!2[0xe0](response[0xc][0x83]v[0x1]`[0x8]@[0xa1][0xd6]N[0x8a][0xb][0xa4][0xe0]$name?-Hisense/[0xe6][0xb5][0xb7][0xe4][0xbf][0xa1] LED49EC320A 49[0xe5][0x90][0x8b]led[0xe6][0xb6][0xb2][0xe6][0x99][0xb6][0xe7][0x94][0xb5][0xe8][0xa7][0x86][0xe6][0x9c][0xba][0xe6][0x99][0xba][0xe8][0x83][0xbd][0xe7][0xbd][0x91][0xe7][0xbb][0x9c][0xe5][0xb9][0xb3][0xe6][0x9d][0xbf][0xe7][0x94][0xb5][0xe8][0xa7][0x86]50[0xe0]"id"88[0xe0])_version_[0x7][0x16]h[0x10][0x2]bP[0x0][0x0][0xe0]%score[0x8]@[0xa1][0xd6]N[0xb][0xa4][0xea],[0xe5][0xb9][0xb3][0xe6][0x9d][0xbf][0xe7][0x94][0xb5][0xe8][0xa7][0x86][0xeb]"83[0xec][0x7][0x16]h[0x10]L[0xf][0x80][0x0][0x0][0xed][0x8]@[0x86][0xcc][0xac][0xb][0xa4][0xea]?1Konka/[0xe5][0xba][0xb7][0xe4][0xbd][0xb3] LED32S1[0xe5][0x8d][0xa7][0xe5][0xae][0xa4]32[0xe5][0x90][0x8b][0xe5][0xae][0x89][0xe5][0x8d][0x93][0xe6][0x99][0xba][0xe8][0x83][0xbd][0xe6][0x97][0xa0][0xe7][0xba][0xbf]WIFI[0xe7][0xbd][0x91][0xe7][0xbb][0x9c][0xe6][0xb6][0xb2][0xe6][0x99][0xb6][0xe5][0xb9][0xb3][0xe6][0x9d][0xbf][0xe7][0x94][0xb5][0xe8][0xa7][0x86][0xe6][0x9c][0xba][0xeb]"87[0xec][0x7][0x16]h[0x10][0x2]b [0x0][0x0][0xed][0x8]@[0x80]Y[0xea][0xb][0xa4][0xea]?,[0xe5][0xa4][0x8f][0xe6][0x99][0xae][0xe5][0xb1][0x8f]PANDA/[0xe7][0x86][0x8a][0xe7][0x8c][0xab] LE39D71S 39[0xe8][0x8b][0xb1][0xe5][0xaf][0xb8][0xe6][0x99][0xba][0xe8][0x83][0xbd]WiFi[0xe6][0xb6][0xb2][0xe6][0x99][0xb6][0xe5][0xb9][0xb3][0xe6][0x9d][0xbf][0xe7][0x94][0xb5][0xe8][0xa7][0x86]40 42 43[0xeb]"91[0xec][0x7][0x16]h[0x10][0x2]bp[0x0][0x1][0xed][0x8]@[0x80]Y[0xea][0xb][0xa4][0xea]?,Hisense/[0xe6][0xb5][0xb7][0xe4][0xbf][0xa1] LED40EC520UA 40[0xe8][0x8b][0xb1][0xe5][0xaf][0xb8]4K[0xe6][0x99][0xba][0xe8][0x83][0xbd][0xe5][0xb9][0xb3][0xe6][0x9d][0xbf][0xe6][0xb6][0xb2][0xe6][0x99][0xb6][0xe7][0x94][0xb5][0xe8][0xa7][0x86][0xe6][0x9c][0xba]WIFI[0xe7][0xbd][0x91][0xe7][0xbb][0x9c][0xeb]"89[0xec][0x7][0x16]h[0x10][0x2]b`[0x0][0x0][0xed][0x8]@{[0x80]4[0xb][0xa4][0xea]?/Changhong/[0xe9][0x95][0xbf][0xe8][0x99][0xb9] 65S1[0xe5][0xae][0x89][0xe5][0x8d][0x93][0xe6][0x99][0xba][0xe8][0x83][0xbd]12[0xe6][0xa0][0xb8]65[0xe8][0x8b][0xb1][0xe5][0xaf][0xb8][0xe7][0xbd][0x91][0xe7][0xbb][0x9c][0xe5][0xb9][0xb3][0xe6][0x9d][0xbf]LED[0xe6][0xb6][0xb2][0xe6][0x99][0xb6][0xe7][0x94][0xb5][0xe8][0xa7][0x86][0xe6][0x9c][0xba]70[0xeb]"90[0xec][0x7][0x16]h[0x10][0x2]bp[0x0][0x0][0xed][0x8]@{[0x80]4[0xb][0xa4][0xea]?5[0xe4][0xb9][0x90][0xe6][0xb4][0x81][0xe5][0xa3][0xab][0xe6][0x99][0xba][0xe8][0x83][0xbd][0xe9][0xa9][0xac][0xe6][0xa1][0xb6][0xe9][0xab][0x98][0xe5][0x93][0x81][0xe8][0xb4][0xa8][0xe5][0x85][0xa8][0xe8][0x87][0xaa][0xe5][0x8a][0xa8][0xe9][0x81][0xa5][0xe6][0x8e][0xa7][0xe6][0x84][0x9f][0xe5][0xba][0x94][0xe4][0xb8][0x80][0xe4][0xbd][0x93][0xe5][0xbc][0x8f][0xe6][0x99][0xba][0xe8][0x83][0xbd][0xe5][0x9d][0x90][0xe4][0xbe][0xbf][0xe5][0x99][0xa8][0xe5][0xba][0xa7][0xe4][0xbe][0xbf][0xe5][0x99][0xa8][0xeb]#147[0xec][0x7][0x16]h[0x10][0x2]b[0x80][0x0][0x0][0xed][0x8]@[0xb]= [0xb][0xa4][0xea]?/MeiLing/[0xe7][0xbe][0x8e][0xe8][0x8f][0xb1] BCD-560WUCX[0xe5][0xaf][0xb9][0xe5][0xbc][0x80][0xe9][0x97][0xa8][0xe7][0x94][0xb5][0xe5][0x86][0xb0][0xe7][0xae][0xb1][0xe5][0xae][0xb6][0xe7][0x94][0xa8][0xe5][0x86][0xb0][0xe7][0xae][0xb1]WIFI[0xe6][0x99][0xba][0xe8][0x83][0xbd][0xe9][0xa3][0x8e][0xe5][0x86][0xb7][0xe6][0x97][0xa0][0xe9][0x9c][0x9c][0xeb]#449[0xec][0x7][0x16]h[0x10][0x2]c[0xe0][0x0][0x0][0xed][0x8]?[0xd4]t[0xcc][0xb][0xa4][0xea]?.FRESTECH/[0xe6][0x96][0xb0][0xe9][0xa3][0x9e] BCD-286WDKSM[0xe9][0x98][0xbf][0xe9][0x87][0x8c][0xe4][0xba][0x91][0xe6][0x99][0xba][0xe8][0x83][0xbd]wifi[0xe9][0xa3][0x8e][0xe5][0x86][0xb7][0xe6][0x97][0xa0][0xe9][0x9c][0x9c][0xe6][0x99][0xba][0xe6][0x8e][0xa7][0xe4][0xb8][0xa4][0xe9][0x97][0xa8][0xe5][0x86][0xb0][0xe7][0xae][0xb1][0xeb]#450[0xec][0x7][0x16]h[0x10][0x2]c[0xe0][0x0][0x1][0xed][0x8]?[0xcf][0x8e],[0xb][0xa4][0xea]?.[0xe3][0x80][0x90][0xe9][0x98][0xbf][0xe9][0x87][0x8c][0xe6][0x99][0xba][0xe8][0x83][0xbd][0xe3][0x80][0x91]Galanz/[0xe6][0xa0][0xbc][0xe5][0x85][0xb0][0xe4][0xbb][0x95] BCD-251WTHG(T) [0xe4][0xb8][0x89][0xe9][0x97][0xa8][0xe7][0x94][0xb5][0xe5][0x86][0xb0][0xe7][0xae][0xb1]251[0xe5][0x8d][0x87][0xe9][0xa3][0x8e][0xe5][0x86][0xb7][0xeb]#452[0xec][0x7][0x16]h[0x10][0x2]c[0xf0][0x0][0x1][0xed][0x8]?[0xcf][0x8e],"
+[DEBUG][2018-10-19 10:02:49,338][org.apache.http.impl.conn.PoolingClientConnectionManager]Connection [id: 0][route: {}->http://localhost:8983] can be kept alive indefinitely
+[DEBUG][2018-10-19 10:02:49,338][org.apache.http.impl.conn.PoolingClientConnectionManager]Connection released: [id: 0][route: {}->http://localhost:8983][total kept alive: 1; route allocated: 1 of 32; total allocated: 1 of 128]
+[DEBUG][2018-10-19 15:34:22,559][org.apache.solr.client.solrj.impl.HttpClientUtil]Creating new http client, config:maxConnections=128&maxConnectionsPerHost=32&followRedirects=false
+[DEBUG][2018-10-19 15:34:22,940][org.apache.http.impl.conn.PoolingClientConnectionManager]Connection request: [route: {}->http://localhost:8983][total kept alive: 0; route allocated: 0 of 32; total allocated: 0 of 128]
+[DEBUG][2018-10-19 15:34:22,952][org.apache.http.impl.conn.PoolingClientConnectionManager]Connection leased: [id: 0][route: {}->http://localhost:8983][total kept alive: 0; route allocated: 1 of 32; total allocated: 1 of 128]
+[DEBUG][2018-10-19 15:34:22,955][org.apache.http.impl.conn.DefaultClientConnectionOperator]Connecting to localhost:8983
+[DEBUG][2018-10-19 15:34:22,977][org.apache.http.client.protocol.RequestAddCookies]CookieSpec selected: default
+[DEBUG][2018-10-19 15:34:22,979][org.apache.http.client.protocol.RequestAuthCache]Auth cache not set in the context
+[DEBUG][2018-10-19 15:34:22,980][org.apache.http.client.protocol.RequestTargetAuthentication]Target auth state: UNCHALLENGED
+[DEBUG][2018-10-19 15:34:22,980][org.apache.http.client.protocol.RequestProxyAuthentication]Proxy auth state: UNCHALLENGED
+[DEBUG][2018-10-19 15:34:22,981][org.apache.http.impl.client.SystemDefaultHttpClient]Attempt 1 to execute request
+[DEBUG][2018-10-19 15:34:22,981][org.apache.http.impl.conn.DefaultClientConnection]Sending request: POST /solr/test/update?wt=javabin&version=2 HTTP/1.1
+[DEBUG][2018-10-19 15:34:22,982][org.apache.http.wire] >> "POST /solr/test/update?wt=javabin&version=2 HTTP/1.1[\r][\n]"
+[DEBUG][2018-10-19 15:34:22,985][org.apache.http.wire] >> "User-Agent: Solr[org.apache.solr.client.solrj.impl.HttpSolrClient] 1.0[\r][\n]"
+[DEBUG][2018-10-19 15:34:22,985][org.apache.http.wire] >> "Transfer-Encoding: chunked[\r][\n]"
+[DEBUG][2018-10-19 15:34:22,985][org.apache.http.wire] >> "Content-Type: application/xml; charset=UTF-8[\r][\n]"
+[DEBUG][2018-10-19 15:34:22,986][org.apache.http.wire] >> "Host: localhost:8983[\r][\n]"
+[DEBUG][2018-10-19 15:34:22,986][org.apache.http.wire] >> "Connection: Keep-Alive[\r][\n]"
+[DEBUG][2018-10-19 15:34:22,988][org.apache.http.wire] >> "[\r][\n]"
+[DEBUG][2018-10-19 15:34:22,989][org.apache.http.headers]>> POST /solr/test/update?wt=javabin&version=2 HTTP/1.1
+[DEBUG][2018-10-19 15:34:22,989][org.apache.http.headers]>> User-Agent: Solr[org.apache.solr.client.solrj.impl.HttpSolrClient] 1.0
+[DEBUG][2018-10-19 15:34:22,989][org.apache.http.headers]>> Transfer-Encoding: chunked
+[DEBUG][2018-10-19 15:34:22,989][org.apache.http.headers]>> Content-Type: application/xml; charset=UTF-8
+[DEBUG][2018-10-19 15:34:22,990][org.apache.http.headers]>> Host: localhost:8983
+[DEBUG][2018-10-19 15:34:22,990][org.apache.http.headers]>> Connection: Keep-Alive
+[DEBUG][2018-10-19 15:34:22,991][org.apache.http.wire] >> "6d[\r][\n]"
+[DEBUG][2018-10-19 15:34:22,992][org.apache.http.wire] >> "<add><doc boost="1.0"><field name="id">1</field><field name="name">sansung[0xe7][0x88][0x86][0xe7][0x82][0xb8][0xe7][0x89][0x8c][0xe6][0x89][0x8b][0xe6][0x9c][0xba]</field></doc></add>"
+[DEBUG][2018-10-19 15:34:22,992][org.apache.http.wire] >> "[\r][\n]"
+[DEBUG][2018-10-19 15:34:22,993][org.apache.http.wire] >> "0[\r][\n]"
+[DEBUG][2018-10-19 15:34:22,993][org.apache.http.wire] >> "[\r][\n]"
+[DEBUG][2018-10-19 15:34:23,004][org.apache.http.wire] << "HTTP/1.1 404 Not Found[\r][\n]"
+[DEBUG][2018-10-19 15:34:23,012][org.apache.http.wire] << "Cache-Control: must-revalidate,no-cache,no-store[\r][\n]"
+[DEBUG][2018-10-19 15:34:23,013][org.apache.http.wire] << "Content-Type: text/html;charset=iso-8859-1[\r][\n]"
+[DEBUG][2018-10-19 15:34:23,013][org.apache.http.wire] << "Content-Length: 248[\r][\n]"
+[DEBUG][2018-10-19 15:34:23,013][org.apache.http.wire] << "[\r][\n]"
+[DEBUG][2018-10-19 15:34:23,014][org.apache.http.impl.conn.DefaultClientConnection]Receiving response: HTTP/1.1 404 Not Found
+[DEBUG][2018-10-19 15:34:23,015][org.apache.http.headers]<< HTTP/1.1 404 Not Found
+[DEBUG][2018-10-19 15:34:23,015][org.apache.http.headers]<< Cache-Control: must-revalidate,no-cache,no-store
+[DEBUG][2018-10-19 15:34:23,015][org.apache.http.headers]<< Content-Type: text/html;charset=iso-8859-1
+[DEBUG][2018-10-19 15:34:23,016][org.apache.http.headers]<< Content-Length: 248
+[DEBUG][2018-10-19 15:34:23,019][org.apache.http.impl.client.SystemDefaultHttpClient]Connection can be kept alive indefinitely
+[DEBUG][2018-10-19 15:34:23,036][org.apache.http.wire] << "<html>[\n]"
+[DEBUG][2018-10-19 15:34:23,036][org.apache.http.wire] << "<head>[\n]"
+[DEBUG][2018-10-19 15:34:23,036][org.apache.http.wire] << "<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>[\n]"
+[DEBUG][2018-10-19 15:34:23,037][org.apache.http.wire] << "<title>Error 404 Not Found</title>[\n]"
+[DEBUG][2018-10-19 15:34:23,037][org.apache.http.wire] << "</head>[\n]"
+[DEBUG][2018-10-19 15:34:23,037][org.apache.http.wire] << "<body><h2>HTTP ERROR 404</h2>[\n]"
+[DEBUG][2018-10-19 15:34:23,038][org.apache.http.wire] << "<p>Problem accessing /solr/test/update. Reason:[\n]"
+[DEBUG][2018-10-19 15:34:23,038][org.apache.http.wire] << "<pre>    Not Found</pre></p>[\n]"
+[DEBUG][2018-10-19 15:34:23,038][org.apache.http.wire] << "</body>[\n]"
+[DEBUG][2018-10-19 15:34:23,038][org.apache.http.wire] << "</html>[\n]"
+[DEBUG][2018-10-19 15:34:23,039][org.apache.http.impl.conn.PoolingClientConnectionManager]Connection [id: 0][route: {}->http://localhost:8983] can be kept alive indefinitely
+[DEBUG][2018-10-19 15:34:23,039][org.apache.http.impl.conn.PoolingClientConnectionManager]Connection released: [id: 0][route: {}->http://localhost:8983][total kept alive: 1; route allocated: 1 of 32; total allocated: 1 of 128]
